@@ -1,0 +1,591 @@
+/* css/index.css */
+
+:root {
+    --azul-fondo-logo: #0d4e5a;
+    /* El color exacto de tu imagen */
+    --azul-panagreen: #074751;
+    --verde-panagreen: #099127;
+    /* Verde base */
+    --verde-menu: #099127;
+    /* El verde de la imagen que enviaste */
+    --blanco: #ffffff;
+}
+
+/* Header General */
+.header-panagreen {
+    min-height: 100px;
+    background-color: #ffffff !important;
+    padding: 0 50px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-link {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-full {
+    height: 100% !important;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Estilos del Menú */
+.nav-links .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 35px 0 !important;
+    /* Centrado vertical */
+    border-bottom: 4px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link.active {
+    color: var(--verde-menu) !important;
+    border-bottom: 4px solid var(--verde-menu);
+}
+
+/* Colores de Redes Sociales */
+.social-links a {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.social-links .facebook {
+    color: #1877F2;
+}
+
+.social-links .whatsapp {
+    color: #25D366;
+}
+
+.social-links .instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Contenedor del Carrusel */
+#carouselPanagreen {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Capa de degradado ajustada para mayor nitidez */
+.overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(13, 78, 90, 0.9) 0%,
+            /* Color fuerte al inicio */
+            rgba(13, 78, 90, 0.7) 25%,
+            /* Empieza a desvanecerse rápido */
+            rgba(13, 78, 90, 0) 50%
+            /* A la mitad de la imagen ya es 100% transparente */
+        );
+    z-index: 1;
+}
+
+/* Posicionamiento del Texto */
+.carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: white;
+    max-width: 500px;
+    text-align: left;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption-custom h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.carousel-caption-custom h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.carousel-caption-custom p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Indicador lateral (estilo 04/04) */
+.carousel-indicators-custom {
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+
+.page-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.page-number span {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 100px;
+    background-color: white;
+    margin: 10px auto;
+}
+
+/* Botones de control personalizados */
+.carousel-control-prev-icon-custom,
+.carousel-control-next-icon-custom {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#current-slide {
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+}
+
+/* Sección Quiénes Somos */
+.quienes-somos-section {
+    background-color: #ffffff;
+}
+
+.titulo-seccion {
+    color: var(--azul-panagreen);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.sublinea-verde {
+    width: 60px;
+    height: 4px;
+    background-color: var(--verde-panagreen);
+}
+
+.descripcion-empresa {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Botón Azul Panagreen */
+.btn-azul-panagreen {
+    background-color: var(--azul-panagreen);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-azul-panagreen:hover {
+    background-color: #0a3a44;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(13, 78, 90, 0.3);
+}
+
+/* Carrusel Secundario */
+#carouselSecundario {
+    position: relative;
+}
+
+#carouselSecundario img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--azul-panagreen);
+    padding: 5px 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+.servicios-section {
+    background-color: #f9f9f9;
+}
+
+.titulo-servicios {
+    color: var(--azul-panagreen);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sublinea-servicios {
+    width: 50px;
+    height: 3px;
+    background-color: var(--verde-panagreen);
+    margin: 0 auto;
+}
+
+/* Contenedor del Icono Circular */
+.icono-circular {
+    width: 120px;
+    height: 120px;
+    background-color: var(--verde-panagreen);
+    /* Color solicitado */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease;
+}
+
+.icono-circular i {
+    color: white;
+    font-size: 3rem;
+}
+
+.servicio-item:hover .icono-circular {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(9, 145, 39, 0.2);
+}
+
+.servicio-item h6 {
+    color: var(--azul-panagreen);
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Enlace Ver Más */
+.ver-mas {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.ver-mas:hover {
+    color: var(--verde-panagreen);
+}
+
+.ver-mas i {
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+
+
+/* Sección de Logros */
+.logros-section {
+    background-color: var(--azul-panagreen);
+    /* #0d4e5a */
+    padding: 80px 0;
+}
+
+.titulo-logros {
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.sublinea-verde-logros {
+    width: 60px;
+    height: 4px;
+    background-color: var(--verde-panagreen);
+    margin: 0 auto;
+}
+
+/* Iconos y Números */
+.logro-item {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.icono-logro {
+    font-size: 3rem;
+    /* Tamaño grande para los iconos */
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.numero-logro {
+    font-size: 4rem;
+    /* Tamaño del número extra grande */
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.texto-logro {
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Sección Clientes con fondo de imagen suave */
+.clientes-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('../imagenes/fondo-manos-arbol.jpg');
+    /* Imagen de fondo similar a la muestra */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 0;
+}
+
+.titulo-clientes {
+    color: var(--azul-panagreen);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Tarjeta del Logo en el carrusel */
+.logo-cliente-card {
+    max-width: 350px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.logo-cliente-card img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Botón Descarga Brochure */
+.btn-descarga-brochure {
+    background-color: var(--azul-panagreen);
+    color: white;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-descarga-brochure:hover {
+    background-color: #0a3a44;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Estilo para las imágenes del brochure */
+.brochure-container img {
+    max-width: 320px;
+    border: 8px solid white;
+}
+
+
+
+
+
+/* Hero Section con fondo azul petróleo */
+.hero-section {
+    background-color: var(--azul-panagreen);
+    padding: 100px 0;
+    color: var(--blanco);
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    color: var(--blanco) !important;
+}
+
+.hero-section .lead {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Botones personalizados */
+.btn-panagreen-verde {
+    background-color: var(--verde-panagreen);
+    border-color: var(--verde-panagreen);
+    color: white;
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 600;
+}
+
+.btn-panagreen-verde:hover {
+    background-color: #6da331;
+    color: white;
+}
+
+.footer-panagreen {
+    background-color: var(--azul-panagreen) !important;
+    /* Asegura el uso de #0d4e5a */
+    padding: 70px 0 30px;
+    color: white;
+}
+
+.footer-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Títulos en Verde Panagreen */
+.titulo-footer {
+    color: var(--verde-panagreen);
+    /* #099127 */
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+/* Enlaces del menú */
+.links-footer li {
+    margin-bottom: 12px;
+}
+
+.links-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+    opacity: 0.85;
+}
+
+.links-footer a i {
+    font-size: 0.7rem;
+    color: var(--verde-panagreen);
+    margin-right: 8px;
+}
+
+.links-footer a:hover {
+    color: var(--verde-panagreen);
+    opacity: 1;
+}
+
+/* Iconos de contacto */
+.contacto-footer p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.contacto-footer i {
+    color: var(--verde-panagreen);
+    margin-right: 10px;
+}
+
+/* Ajuste para el mockup de Facebook */
+.fb-page-mockup {
+    min-height: 150px;
+}
+
+
+/* AJUSTES PARA MÓVILES (Responsive) */
+@media (max-width: 991px) {
+    .header-panagreen {
+        padding: 10px 20px !important;
+        height: auto;
+    }
+
+    .logo-link {
+        height: 60px;
+    }
+
+    .nav-links .nav-link {
+        padding: 15px 0 !important;
+        border-bottom: none;
+        border-left: 4px solid transparent;
+    }
+
+    .nav-links .nav-link.active {
+        border-left: 4px solid var(--verde-menu);
+        background-color: rgba(51, 128, 13, 0.05);
+    }
+
+    .social-links {
+        justify-content: center;
+        padding: 20px 0;
+    }
+}
+
+/* Ajuste Responsivo para carrusel */
+@media (max-width: 768px) {
+    .carousel-caption-custom h1 {
+        font-size: 2.5rem;
+    }
+
+    .overlay-gradient {
+        background: rgba(13, 78, 90, 0.85);
+        /* Cobertura total en móviles */
+    }
+}
+
+/* Ajuste para 5 columnas en escritorio */
+@media (min-width: 992px) {
+    .col-lg-2-custom {
+        flex: 0 0 auto;
+        width: 20%;
+        /* Divide el ancho en 5 partes iguales */
+    }
+}
+
+/* Responsivo para móviles */
+@media (max-width: 767px) {
+    .numero-logro {
+        font-size: 3.5rem;
+    }
+
+    .logros-section {
+        padding: 50px 0;
+    }
+}
+
+
+/* Responsivo */
+@media (max-width: 991px) {
+    .clientes-section {
+        padding: 50px 0;
+    }
+
+    .logo-cliente-card {
+        max-width: 280px;
+        height: 150px;
+    }
+}
