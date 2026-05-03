@@ -1,20 +1,27 @@
 /* css/index.css */
 
+/* =========================================
+   1. VARIABLES Y GENERALES
+   ========================================= */
 :root {
     --azul-fondo-logo: #0d4e5a;
-    /* El color exacto de tu imagen */
     --azul-panagreen: #074751;
     --verde-panagreen: #099127;
-    /* Verde base */
     --verde-menu: #099127;
-    /* El verde de la imagen que enviaste */
     --blanco: #ffffff;
 }
 
-/* Header General */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================================
+   2. HEADER Y NAVEGACIÓN
+   ========================================= */
 .header-panagreen {
     min-height: 100px;
-    background-color: #ffffff !important;
+    background-color: var(--blanco) !important;
     padding: 0 50px !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
@@ -31,13 +38,11 @@
     object-fit: contain;
 }
 
-/* Estilos del Menú */
 .nav-links .nav-link {
     color: #333 !important;
     font-weight: 500;
     margin: 0 10px;
     padding: 35px 0 !important;
-    /* Centrado vertical */
     border-bottom: 4px solid transparent;
     transition: 0.3s;
 }
@@ -48,7 +53,7 @@
     border-bottom: 4px solid var(--verde-menu);
 }
 
-/* Colores de Redes Sociales */
+/* Redes Sociales */
 .social-links a {
     font-size: 1.5rem;
     margin-left: 15px;
@@ -69,38 +74,30 @@
     -webkit-text-fill-color: transparent;
 }
 
-
-/* Contenedor del Carrusel */
+/* =========================================
+   3. CARRUSEL PRINCIPAL
+   ========================================= */
 #carouselPanagreen {
     position: relative;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
 }
 
 .carousel-img {
-    height: 600px;
+    height: 900px;
     object-fit: cover;
 }
 
-/* Capa de degradado ajustada para mayor nitidez */
 .overlay-gradient {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right,
-            rgba(13, 78, 90, 0.9) 0%,
-            /* Color fuerte al inicio */
-            rgba(13, 78, 90, 0.7) 25%,
-            /* Empieza a desvanecerse rápido */
-            rgba(13, 78, 90, 0) 50%
-            /* A la mitad de la imagen ya es 100% transparente */
-        );
+    background: linear-gradient(to right, rgba(13, 78, 90, 0.9) 0%, rgba(13, 78, 90, 0.7) 25%, rgba(13, 78, 90, 0) 50%);
     z-index: 1;
 }
 
-/* Posicionamiento del Texto */
 .carousel-caption-custom {
     position: absolute;
     top: 50%;
@@ -121,7 +118,8 @@
 }
 
 .carousel-caption-custom h1 {
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    /* Ajuste automático fluido */
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -181,15 +179,20 @@
     display: inline-block;
 }
 
-/* Sección Quiénes Somos */
+
+/* =========================================
+   4. SECCIONES DE CONTENIDO
+   ========================================= */
+
+/* Quiénes Somos */
 .quienes-somos-section {
     background-color: #ffffff;
 }
 
 .titulo-seccion {
     color: var(--azul-panagreen);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 700;
-    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
@@ -201,8 +204,9 @@
 
 .descripcion-empresa {
     color: #555;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    /* Párrafos que se adaptan */
     line-height: 1.8;
-    font-size: 1.1rem;
     text-align: justify;
 }
 
@@ -249,10 +253,13 @@
 
 .servicios-section {
     background-color: #f9f9f9;
+    padding: 60px 0;
 }
 
 .titulo-servicios {
     color: var(--azul-panagreen);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    /* Para todos los encabezados de sección */
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -269,7 +276,6 @@
     width: 120px;
     height: 120px;
     background-color: var(--verde-panagreen);
-    /* Color solicitado */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -318,11 +324,13 @@
 /* Sección de Logros */
 .logros-section {
     background-color: var(--azul-panagreen);
-    /* #0d4e5a */
     padding: 80px 0;
+    color: white;
 }
 
 .titulo-logros {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    /* Para todos los encabezados de sección */
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 5px;
@@ -349,11 +357,8 @@
 }
 
 .numero-logro {
-    font-size: 4rem;
-    /* Tamaño del número extra grande */
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .texto-logro {
@@ -364,13 +369,11 @@
 
 /* Sección Clientes con fondo de imagen suave */
 .clientes-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-        url('../imagenes/fondo-manos-arbol.jpg');
-    /* Imagen de fondo similar a la muestra */
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../imagenes/fondo-manos-arbol.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .titulo-clientes {
@@ -414,29 +417,11 @@
 
 /* Estilo para las imágenes del brochure */
 .brochure-container img {
-    max-width: 320px;
+    max-width: 220px;
     border: 8px solid white;
 }
 
 
-
-
-
-/* Hero Section con fondo azul petróleo */
-.hero-section {
-    background-color: var(--azul-panagreen);
-    padding: 100px 0;
-    color: var(--blanco);
-}
-
-.hero-section h1 {
-    font-size: 3.5rem;
-    color: var(--blanco) !important;
-}
-
-.hero-section .lead {
-    color: rgba(255, 255, 255, 0.9) !important;
-}
 
 /* Botones personalizados */
 .btn-panagreen-verde {
@@ -468,7 +453,6 @@
 /* Títulos en Verde Panagreen */
 .titulo-footer {
     color: var(--verde-panagreen);
-    /* #099127 */
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 25px;
@@ -516,22 +500,46 @@
     min-height: 150px;
 }
 
+/* =========================================
+   6. MEDIA QUERIES (ORDENADOS)
+   ========================================= */
+
+/* --- Escritorio (5 Columnas) --- */
+@media (min-width: 992px) {
+    .col-lg-2-custom {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
 
 /* AJUSTES PARA MÓVILES (Responsive) */
 @media (max-width: 991px) {
     .header-panagreen {
-        padding: 10px 20px !important;
-        height: auto;
+        padding: 5px 15px !important;
+        min-height: 80px;
+        /* Reducimos un poco el alto total para que no ocupe tanta pantalla */
+    }
+
+    .logo-full {
+        height: 70px !important;
+        /* Subimos de 50px a 70px para que se vea más grande */
+        width: auto;
+    }
+
+    .navbar-toggler {
+        margin-top: 5px;
     }
 
     .logo-link {
-        height: 60px;
+        height: 80px;
+        /* Alineado con el nuevo min-height */
     }
 
     .nav-links .nav-link {
-        padding: 15px 0 !important;
         border-bottom: none;
         border-left: 4px solid transparent;
+        font-size: 0.9rem;
+        padding: 10px 15px !important;
     }
 
     .nav-links .nav-link.active {
@@ -543,43 +551,63 @@
         justify-content: center;
         padding: 20px 0;
     }
-}
 
-/* Ajuste Responsivo para carrusel */
-@media (max-width: 768px) {
-    .carousel-caption-custom h1 {
-        font-size: 2.5rem;
+
+    /*Sección Servicios en Móvil */
+    /* 1. Reducimos el padding de la sección para ahorrar espacio */
+    .servicios-section {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
     }
 
-    .overlay-gradient {
-        background: rgba(13, 78, 90, 0.85);
-        /* Cobertura total en móviles */
-    }
-}
-
-/* Ajuste para 5 columnas en escritorio */
-@media (min-width: 992px) {
-    .col-lg-2-custom {
-        flex: 0 0 auto;
-        width: 20%;
-        /* Divide el ancho en 5 partes iguales */
-    }
-}
-
-/* Responsivo para móviles */
-@media (max-width: 767px) {
-    .numero-logro {
-        font-size: 3.5rem;
+    /* 2. Título "SERVICIOS" más proporcional */
+    .titulo-servicios {
+        font-size: 1.6rem !important;
+        margin-bottom: 3px !important;
     }
 
-    .logros-section {
-        padding: 50px 0;
+    /* 3. El círculo verde: lo bajamos de tamaño (estaba muy gigante) */
+    .icono-circular {
+        width: 100px !important;
+        /* Tamaño ideal para móvil */
+        height: 100px !important;
+        margin: 0 auto 10px auto !important;
+        /* Centrado */
     }
-}
+
+    /* 4. Los iconos blancos de FontAwesome dentro del círculo */
+    .icono-circular i {
+        font-size: 30px !important;
+        /* Reducimos el rayo, la hoja, etc. */
+        line-height: 100px !important;
+        /* Mismo alto que el círculo para centrar */
+    }
+
+    /* 5. El texto del servicio (<h6>) */
+    .servicio-item h6 {
+        font-size: 0.95rem !important;
+        /* Más pequeño para que no ocupe 3 líneas */
+        font-weight: 600;
+        margin-bottom: 6px !important;
+        padding: 0 5px;
+    }
+
+    /* 6. El enlace "Ver Más" */
+    .ver-mas {
+        font-size: 0.85rem !important;
+        display: inline-block;
+        margin-bottom: 25px !important;
+        /* Espacio antes del siguiente servicio */
+    }
+
+    /* 7. Ajuste de columnas en móvil para que no se peguen */
+    .servicio-item {
+        margin-bottom: 10px;
+    }
 
 
-/* Responsivo */
-@media (max-width: 991px) {
+
+    /*Sección Clientes*/
     .clientes-section {
         padding: 50px 0;
     }
@@ -587,5 +615,99 @@
     .logo-cliente-card {
         max-width: 280px;
         height: 150px;
+    }
+
+
+    /* CENTRADO DEL LOGO BLANCO EN EL FOOTER */
+    .footer-panagreen .col-lg-3.col-md-6 {
+        justify-content: center !important;
+        /* Centra horizontalmente el logo blanco */
+        text-align: center;
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-logo {
+        max-width: 200px;
+        /* Aumentamos un poco el tamaño del logo blanco en móvil para que luzca */
+        margin: 0 auto;
+    }
+
+}
+
+/* Ajuste Responsivo para carrusel */
+@media (max-width: 768px) {
+
+    #carouselPanagreen,
+    .carousel-img {
+        height: 450px;
+    }
+
+    .carousel-caption-custom {
+        left: 5%;
+        right: 5%;
+        max-width: 100%;
+        text-align: center;
+        top: 50%;
+    }
+
+    .carousel-caption-custom h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .carousel-caption-custom p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* Ocultar el indicador 01/04 en móviles para ganar espacio si es necesario */
+    .carousel-indicators-custom {
+        display: none;
+    }
+
+    .overlay-gradient {
+        background: rgba(13, 78, 90, 0.85);
+        /* Cobertura total en móviles */
+    }
+
+
+
+    /* Ajuste para la sección Quiénes Somos en móvil */
+    .quienes-somos-section {
+        padding: 40px 15px !important;
+        text-align: center;
+    }
+
+    .content-text {
+        text-align: center;
+        /* Centrar texto ayuda a la lectura en pantallas pequeñas */
+        padding-right: 0 !important;
+    }
+
+    .sublinea-verde {
+        margin: 0 auto 20px;
+        /* Centrar la línea verde */
+    }
+
+    .numero-logro {
+        font-size: 2.8rem;
+    }
+
+    .logros-section {
+        padding: 50px 0;
+    }
+
+    /* Ajuste para la sección Clientes en móvil */
+    .clientes-section {
+        padding: 50px 15px !important;
+    }
+
+    /* Ajuste para el footer en móvil */
+    .footer-panagreen {
+        padding: 50px 15px 30px !important;
+    }
+
+    /* Ajuste para el carrusel secundario en móvil */
+    #carouselSecundario img {
+        height: 250px;
     }
 }

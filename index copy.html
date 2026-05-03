@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panagreen - Ingeniería y consultoría ambiental</title>
+    <link href="imagenes/logo.png" rel="shortcut icon" type="image/x-icon">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg header-panagreen fixed-top">
+        <div class="container-fluid">
+            <!-- 1. Logo (Izquierda) -->
+            <a class="navbar-brand logo-link" href="#">
+                <img src="imagenes/logo.png" alt="Panagreen" class="logo-full">
+            </a>
+
+            <!-- Botón Hamburguesa (Solo visible en móviles/tablets) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPanagreen"
+                aria-controls="menuPanagreen" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenedor colapsable -->
+            <div class="collapse navbar-collapse" id="menuPanagreen">
+                <!-- 2. Menú (Centro) -->
+                <ul class="navbar-nav mx-auto nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#autorizacion">Autorización</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+
+                <!-- 3. Redes Sociales (Derecha) -->
+                <div class="social-links d-flex">
+                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselPanagreen" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- Indicadores laterales estilo '04/04' -->
+        <div class="carousel-indicators-custom">
+            <!-- El span con id "current-slide" es el que cambiará -->
+            <div class="page-number">
+                <span id="current-slide">01</span><span>/04</span>
+            </div>
+            <div class="vertical-line"></div>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="overlay-gradient"></div>
+                <img src="imagenes/monitoreo-ambiental.png" class="d-block w-100 img-fluid carousel-img"
+                    alt="Monitoreo Ambiental">
+                <div class="carousel-caption-custom">
+                    <h5 class="text-uppercase"><img src="imagenes/hoja.png" alt="Icono Hoja" class="hoja-flotante">
+                        Monitoreos</h5>
+                    <!-- Contenedor para el título y la hoja -->
+                    <div class="title-wrapper">
+
+                        <h1>AMBIENTALES</h1>
+                    </div>
+                    <p>Contamos con el respaldo de profesionales con experiencia en entidades públicas y privadas.</p>
+                    <a href="#" class="btn btn-panagreen-verde">
+                        <i class="fas fa-plus-square"></i> VER MÁS
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 2 (Ejemplo) -->
+            <div class="carousel-item">
+                <div class="overlay-gradient"></div>
+                <img src="imagenes/consultoria-ambiental.png" class="d-block w-100 img-fluid carousel-img"
+                    alt="Consultoría">
+                <div class="carousel-caption-custom">
+                    <h5 class="text-uppercase"><img src="imagenes/hoja.png" alt="Icono Hoja" class="hoja-flotante">
+                        Ingeniería</h5>
+                    <div class="title-wrapper">
+                        <h1>CONSULTORÍA</h1>
+                    </div>
+                    <p>Soluciones sostenibles para proyectos de alto impacto ambiental.</p>
+                    <a href="#" class="btn btn-panagreen-verde">
+                        <i class="fas fa-plus-square"></i> VER MÁS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPanagreen" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon-custom"><i class="fas fa-chevron-left"></i></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPanagreen" data-bs-slide="next">
+            <span class="carousel-control-next-icon-custom"><i class="fas fa-chevron-right"></i></span>
+        </button>
+    </div>
+
+    <section class="quienes-somos-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- SECCIÓN IZQUIERDA: Texto -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="content-text pe-lg-4">
+                        <h2 class="titulo-seccion">¿Quiénes somos?</h2>
+                        <div class="sublinea-verde mb-4"></div>
+                        <p class="descripcion-empresa">
+                            Somos <strong>PANAGREEN</strong>, una empresa especializada en consultoría ambiental y
+                            servicios técnicos.
+                            Brindamos soluciones responsables y sostenibles que cumplen con la normativa nacional e
+                            internacional, con el propósito de generar confianza y valor en nuestros clientes y aliados
+                            estratégicos.
+                            Contamos con un equipo multidisciplinario de profesionales con amplia experiencia en el
+                            sector público
+                            y privado, comprometidos con la excelencia y la innovación.
+                        </p>
+                        <a href="#contacto" class="btn btn-azul-panagreen">CÓNOCENOS</a>
+                    </div>
+                </div>
+
+                <!-- SECCIÓN DERECHA: Nuevo Carrusel de Imágenes -->
+                <div class="col-lg-6">
+                    <div id="carouselSecundario" class="carousel slide shadow-lg rounded-3 overflow-hidden"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/transporte-ambiental.png" class="d-block w-100" alt="Transporte">
+                                <div class="carousel-label">TRANSPORTES</div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/mineria-responsable.png" class="d-block w-100" alt="Minería">
+                                <div class="carousel-label">MINERÍA</div>
+                            </div>
+                        </div>
+                        <!-- Controles pequeños para el carrusel secundario -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSecundario"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSecundario"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios-section py-5">
+        <div class="container text-center">
+            <h2 class="titulo-servicios">SERVICIOS</h2>
+            <div class="sublinea-servicios mb-5"></div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-lg-2-custom">
+                    <div class="servicio-item">
+                        <div class="icono-circular">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h6>CONSULTORÍA AMBIENTAL</h6>
+                        <a href="#" class="ver-mas">Ver Más <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2-custom">
+                    <div class="servicio-item">
+                        <div class="icono-circular">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h6>SERVICIO DE INGENIERÍA</h6>
+                        <a href="#" class="ver-mas">Ver Más <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2-custom">
+                    <div class="servicio-item">
+                        <div class="icono-circular">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h6>PERMISOS AMBIENTALES</h6>
+                        <a href="#" class="ver-mas">Ver Más <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2-custom">
+                    <div class="servicio-item">
+                        <div class="icono-circular">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h6>MONITOREO AMBIENTAL</h6>
+                        <a href="#" class="ver-mas">Ver Más <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-2-custom">
+                    <div class="servicio-item">
+                        <div class="icono-circular">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h6>ESTUDIOS SOCIALES</h6>
+                        <a href="#" class="ver-mas">Ver Más <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="logros-section py-5">
+        <div class="container text-center">
+            <!-- Título Blanco con Sublínea Verde -->
+            <h2 class="titulo-logros text-white">NUESTROS LOGROS</h2>
+            <div class="sublinea-verde-logros mb-5"></div>
+
+            <div class="row">
+                <!-- Logro 1 -->
+                <div class="col-md-4 logro-item">
+                    <div class="icono-logro">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <div class="numero-logro">140</div>
+                    <p class="texto-logro">Estudios Ambientales Aprobados</p>
+                </div>
+
+                <!-- Logro 2 -->
+                <div class="col-md-4 logro-item">
+                    <div class="icono-logro">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="numero-logro">180</div>
+                    <p class="texto-logro">Monitoreo Ambiental</p>
+                </div>
+
+                <!-- Logro 3 -->
+                <div class="col-md-4 logro-item">
+                    <div class="icono-logro">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="numero-logro">25</div>
+                    <p class="texto-logro">Planes de Manejo de Residuos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes" class="clientes-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LADO IZQUIERDO: Brochure -->
+                <div class="col-lg-6 text-center mb-5 mb-lg-0">
+                    <div class="brochure-container">
+                        <img src="imagenes/brochure-portada.png" alt="Brochure Panagreen"
+                            class="img-fluid shadow-lg rounded">
+                        <div class="mt-3">
+                            <a href="documentos/brochure.pdf" target="_blank" class="btn btn-descarga-brochure">
+                                <i class="fas fa-file-pdf me-2"></i> DESCARGAR BROCHURE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LADO DERECHO: Carrusel de Clientes -->
+                <div class="col-lg-6 text-center">
+                    <h2 class="titulo-clientes">NUESTROS CLIENTES</h2>
+                    <div class="sublinea-verde mx-auto mb-4"></div>
+
+                    <div id="carouselLogos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Cliente 1 -->
+                            <div class="carousel-item active">
+                                <div class="logo-cliente-card bg-white p-4 shadow-sm mx-auto">
+                                    <img src="imagenes/logo-mvcs.png" alt="Ministerio de Vivienda">
+                                </div>
+                            </div>
+                            <!-- Cliente 2 -->
+                            <div class="carousel-item">
+                                <div class="logo-cliente-card bg-white p-4 shadow-sm mx-auto">
+                                    <img src="imagenes/logo-minagri.png" alt="Cliente 2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón Ver Más debajo del carrusel -->
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-azul-panagreen px-5">VER MÁS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="footer-panagreen">
+        <div class="container">
+            <div class="row text-start">
+                <!-- Columna 1: Logo -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 d-flex align-items-center">
+                    <img src="imagenes/logo-blanco.png" alt="Panagreen Logo" class="footer-logo">
+                </div>
+
+                <!-- Columna 2: Menú -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="titulo-footer">MENÚ</h5>
+                    <ul class="list-unstyled links-footer">
+                        <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="#nosotros"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                        <li><a href="#servicios"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                        <li><a href="#clientes"><i class="fas fa-chevron-right"></i> Clientes</a></li>
+                        <li><a href="#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Datos de Contacto -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="titulo-footer">DATOS DE CONTACTO</h5>
+                    <div class="contacto-footer">
+                        <p><i class="fas fa-globe"></i> <strong>Página Web</strong><br>
+                            <span class="ms-4">www.panagreen.com.pe</span>
+                        </p>
+
+                        <p><i class="fas fa-home"></i> <strong>Dirección</strong><br>
+                            <span class="ms-4">Calle Ventanilla Mz “J” Lote 10 Mi Perú - Callao</span>
+                        </p>
+
+                        <p><i class="fas fa-phone"></i> 920 252 219 / 975 695 086 </p>
+
+                        <p><i class="fas fa-envelope"></i> informes@panagreen.com.pe</p>
+                    </div>
+                </div>
+
+                <!-- Columna 4: Facebook -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="titulo-footer">DÉJANOS UN LIKE</h5>
+                    <div class="fb-page-mockup bg-white p-2 rounded">
+                        <!-- Aquí iría el widget de Facebook real o una imagen -->
+                        <div class="d-flex align-items-center p-2 border-bottom">
+                            <img src="imagenes/logo.png" width="40" class="me-2">
+                            <div class="text-dark small"><strong>Panagreen Ingenieros...</strong><br>4559 seguidores
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-secondary mt-2 w-100"><i class="fab fa-facebook"></i>
+                            Seguir página</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-light opacity-25 my-4">
+            <div class="text-center">
+                <p class="small mb-0 opacity-75">&copy; 2026 Panagreen S.A.C. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Busca el enlace que coincide con la URL actual y le pone el color verde del menú y una línea debajo para resaltar
+        // Obtiene la URL actual de la barra de direcciones
+        const currentPath = window.location.pathname;
+
+        // Busca todos los enlaces del menú
+        const navLinks = document.querySelectorAll('.nav-links li a');
+
+        navLinks.forEach(link => {
+            // Si el 'href' del enlace coincide con la ruta actual
+            if (link.getAttribute('href') === currentPath ||
+                (currentPath === '/' && link.getAttribute('href') === 'index.html')) {
+                link.classList.add('active');
+            }
+        });
+
+
+        // Actualiza el número del slide actual en el indicador personalizado
+        const myCarousel = document.getElementById('carouselPanagreen');
+        const currentSlideText = document.getElementById('current-slide');
+
+        // Evento de Bootstrap que se dispara cuando el slide cambia
+        myCarousel.addEventListener('slide.bs.carousel', function (event) {
+            // event.to es el índice del siguiente slide (empieza en 0)
+            let nextIndex = event.to + 1;
+
+            // Formateamos para que siempre tenga dos dígitos (01, 02, etc.)
+            let formattedNumber = nextIndex < 10 ? '0' + nextIndex : nextIndex; // Actualizamos el contenido del HTML
+            currentSlideText.innerText = formattedNumber;
+        }); </script>
+
+</body>
+
+</html>
