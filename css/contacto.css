@@ -1,0 +1,43 @@
+/* Variables de color basadas en Panagreen */
+:root {
+    --azul-petroleo: #0d4e5a;
+    --verde-panagreen: #099127;
+}
+
+.text-azul-panagreen {
+    color: var(--azul-petroleo);
+}
+
+/* Reutilización del estilo de header de galeria.css */
+.galeria-header {
+    background-color: var(--azul-petroleo);
+    margin-top: 85px;
+    /* Ajustar según altura de tu navbar */
+}
+
+/* Estilo para los inputs del formulario */
+.form-control:focus {
+    border-color: var(--verde-panagreen);
+    box-shadow: 0 0 0 0.25rem rgba(9, 145, 39, 0.25);
+}
+
+/* Botón personalizado */
+.btn-azul-panagreen {
+    background-color: var(--azul-petroleo);
+    color: white;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-azul-panagreen:hover {
+    background-color: var(--verde-panagreen);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Ajuste para el mapa en móviles */
+@media (max-width: 991px) {
+    .galeria-header {
+        margin-top: 70px;
+    }
+}
