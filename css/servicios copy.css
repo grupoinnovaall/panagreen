@@ -1,0 +1,126 @@
+/* Variables de Diseño Institucional (Mismas que nosotros.css) */
+:root {
+    --azul-petroleo: #0d4e5a;
+    --verde-panagreen: #099127;
+    --verde-contacto: #8dbb31;
+    --blanco: #ffffff;
+}
+
+/* 1. HEADER (Banner Servicios) - Siguiendo el patrón de posicionamiento de nosotros.html */
+.servicios-header {
+    background-color: var(--azul-petroleo) !important;
+    width: 100%;
+    /* Compensación de altura idéntica a nosotros.html */
+    margin-top: 100px;
+    padding: 50px 0 !important;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.servicios-header h1 {
+    color: var(--blanco) !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: none;
+}
+
+/* 2. ESTILOS DE LA GALERÍA DE SERVICIOS (Imagen de referencia) */
+.servicio-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    /* Asegura que todas las tarjetas midan lo mismo */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efecto hover sutil en las tarjetas de servicio */
+.servicio-card:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-card img {
+    width: 100%;
+    /* Mantiene la proporción original de la imagen sin recortar nada */
+    height: auto;
+    aspect-ratio: 1 / 1;
+    /* 'contain' muestra la imagen completa. Si no es cuadrada, dejará espacios vacíos a los lados */
+    object-fit: contain;
+    /* Añadimos un fondo neutro o blanco para los espacios que sobren */
+    background-color: #f8f9fa;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-card:hover img {
+    border-color: var(--verde-panagreen);
+    /* Borde verde al pasar el mouse */
+}
+
+/* TÍTULO AJUSTADO */
+.servicio-titulo {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    color: var(--azul-petroleo);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* 3. LLAMADA A LA ACCIÓN FINAL (Mismo patrón que nosotros.css) */
+.CTA-final .CTA-titulo {
+    color: var(--azul-petroleo);
+}
+
+.btn-contacto {
+    background-color: var(--verde-contacto);
+    border: none;
+    border-radius: 4px;
+    color: var(--blanco) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #7da62b !important;
+    /* Verde contacto más oscuro */
+    color: var(--blanco) !important;
+    transform: scale(1.05);
+    /* Efecto de escala */
+}
+
+/* Ajustes Responsive (Mismo patrón de index.css) */
+@media (max-width: 768px) {
+    .servicios-header {
+        margin-top: 80px;
+        /* Ajuste para menú móvil */
+        padding: 30px 0 !important;
+    }
+
+    .servicios-header h1 {
+        font-size: 2rem;
+    }
+
+    .servicio-card img {
+        height: 200px;
+        /* Altura reducida en móviles */
+    }
+}
+
+/* Para asegurar que en móviles la imagen no se vea pequeña */
+@media (max-width: 576px) {
+    .servicio-card img {
+        aspect-ratio: auto;
+        /* En móviles muy pequeños, dejamos que la imagen mande */
+        height: auto;
+    }
+}

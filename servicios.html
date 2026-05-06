@@ -32,60 +32,407 @@
             </div>
         </header>
 
-        <!-- Sección Principal: Galería de Servicios (Estructura de la imagen) -->
+        <!-- SECCIÓN DE LISTADO DE SERVICIOS -->
         <section class="py-5 bg-white">
             <div class="container">
-                <div class="row g-4 text-center justify-content-center">
-                    <!-- Col-12 (móvil), Col-sm-6 (tablet), Col-md-4 (PC) -->
-                    <!-- Servicio 1: Consultoría Ambiental -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="servicio-card border-0">
-                            <!-- Clase img-fluid de Bootstrap para que sea 100% responsiva -->
-                            <img src="imagenes/consultoria-ambiental-2.png" class="img-fluid rounded"
-                                alt="Consultoría Ambiental">
-                            <h3 class="servicio-titulo text-center">Consultoría Ambiental</h3>
+                <div class="row g-4">
+
+                    <!-- 1. TOPOGRAFÍA Y GEOMÁTICA -->
+                    <div class="col-lg-6">
+                        <div class="servicio-card border p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-map-marked-alt fa-2x text-success me-3"></i>
+                                <h3 class="servicio-titulo h4 m-0">1. Topografía y Geomática</h3>
+                            </div>
+                            <div class="accordion accordion-flush" id="accTopografia">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed py-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#top-1">
+                                            Topografía Convencional y Drones
+                                        </button>
+                                    </h2>
+                                    <div id="top-1" class="accordion-collapse collapse" data-bs-parent="#accTopografia">
+                                        <div class="accordion-body text-muted small">
+                                            <ul>
+                                                <li>Redes de control geodésico y topográfico.</li>
+                                                <li>Levantamientos aerotransportados (Drones).</li>
+                                                <li>Trazos, replanteos y control de movimiento de tierras.</li>
+                                                <li>Levantamiento topográfico para proyectos de obras de agua y
+                                                    alcantarillado, vías de transporte, líneas de transmisión eléctrica
+                                                    edificaciones y habilitaciones urbanas</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed py-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#top-2">
+                                            GIS y Análisis Espacial
+                                        </button>
+                                    </h2>
+                                    <div id="top-2" class="accordion-collapse collapse" data-bs-parent="#accTopografia">
+                                        <div class="accordion-body text-muted small">
+                                            <ul>
+                                                <li>Desarrollo de Sistemas de Información Geográfica (GIS) en diversos
+                                                    campos como: Hidrología, Vías de Transporte, Estudios Ambientales,
+                                                    Saneamiento y Arqueología. </li>
+                                                <li>Desarrollo de sistemas de información catastral (urbano, rural y de
+                                                    infraestructuras).</li>
+                                                <li>Diseño de mapas base y mapas temáticos</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed py-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#top-3">
+                                            Cartografía, Teledetección y Catastro
+                                        </button>
+                                    </h2>
+                                    <div id="top-3" class="accordion-collapse collapse" data-bs-parent="#accTopografia">
+                                        <div class="accordion-body text-muted small">
+                                            <ul>
+                                                <li>Procesamiento de imágenes satelitales para la identificación de
+                                                    cobertura vegetal, uso actual de suelos, retroceso de nevados,
+                                                    desertificación, cambios en la cobertura vegetal, salud de cultivos
+                                                    agrícolas, delimitación de fajas marginales y comportamiento de
+                                                    cauce de ríos.</li>
+                                                <li>Generación de cartografía mediante métodos fotogramétricos. </li>
+                                                <li>Desarrollo de proyectos de catastro urbano, rural y de
+                                                    infraestructuras.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Servicio 2: Servicios de Ingeniería -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="servicio-card border-0">
-                            <img src="imagenes/servicios-ingenieria-2.png" alt="Servicios de Ingeniería"
-                                class="img-fluid mb-2 rounded">
-                            <h3 class="servicio-titulo text-center">Servicios de Ingeniería</h3>
+                    <!-- 2. INGENIERÍA Y SOLUCIONES TÉCNICAS -->
+                    <div class="col-lg-6">
+                        <div class="servicio-card border p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-tools fa-2x text-success me-3"></i>
+                                <h3 class="servicio-titulo h4 m-0">2. Ingeniería y Soluciones Técnicas</h3>
+                            </div>
+                            <div class="accordion accordion-flush" id="accIngenieria">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed py-2" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#ing-1">
+                                            Nuestras Especialidades
+                                        </button>
+                                    </h2>
+                                    <div id="ing-1" class="accordion-collapse collapse" data-bs-parent="#accIngenieria">
+                                        <div class="accordion-body text-muted small">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="mb-0">
+                                                        <li>Construcción y Ejecución de Obras Civiles</li>
+                                                        <li>Supervisión y Dirección Técnica de Obras</li>
+                                                        <li>Elaboración de Expedientes Técnicos a Nivel de Ejecución
+                                                        </li>
+                                                        <li>Formulación de Perfiles Técnico-Económicos</li>
+                                                        <li>Estudios de Preinversión y Factibilidad</li>
+                                                        <li>Diseño y Cálculo Estructural</li>
+                                                        <li>Diseño de Infraestructura Civil e Industrial</li>
+                                                        <li>Obras de Movimiento de Tierras y Plataformado</li>
+                                                        <li>Obras de Pavimentación y Vías de Acceso</li>
+                                                        <li>Obras de Concreto Armado y Estructuras Metálicas</li>
+                                                        <li>Diseño e Implementación de Sistemas de Puesta a Tierra</li>
+                                                        <li>Instalaciones Eléctricas de Baja y Media Tensión</li>
+                                                        <li>Instalaciones Sanitarias y Redes Hidráulicas</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="mb-0">
+                                                        <li>Diseño e Implementación de Redes Contra Incendio</li>
+                                                        <li>Diseño de Sistemas HVAC / Aire Acondicionado y Ventilación
+                                                        </li>
+                                                        <li>Automatización y Control de Procesos Industriales</li>
+                                                        <li>Montaje Electromecánico</li>
+                                                        <li>Mantenimiento Integral de Infraestructura e Instalaciones
+                                                        </li>
+                                                        <li>Rehabilitación y Mejoramiento de Infraestructura</li>
+                                                        <li>Inspección Técnica y Diagnóstico Estructural</li>
+                                                        <li>Levantamientos Topográficos y Replanteo de Obras</li>
+                                                        <li>Modelado BIM y Planos As-Built</li>
+                                                        <li>Arquitectura y Diseño Técnico</li>
+                                                        <li>Remodelación y Adecuación de Espacios</li>
+                                                        <li>Servicios Generales</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Servicio 3: Permisos Ambientales -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="servicio-card border-0">
-                            <img src="imagenes/permisos-ambientales-2.png" alt="Permisos Ambientales"
-                                class="img-fluid mb-2 rounded">
-                            <h3 class="servicio-titulo text-center">Permisos Ambientales</h3>
+
+                    <!-- 3. GESTIÓN DE RESIDUOS SÓLIDOS -->
+                    <div class="col-lg-6">
+                        <div class="servicio-card border p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-recycle fa-2x text-success me-3"></i>
+                                <h3 class="servicio-titulo h4 m-0">3. Gestión de Residuos</h3>
+                            </div>
+                            <div class="servicio-contenido mt-3">
+                                <ul class="list-unstyled text-muted small">
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Gestión
+                                        integral de residuos sólidos.</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Gestión
+                                        integral de residuos peligrosos.</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Gestión
+                                        integral de residuos de la construcción.</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Gestión
+                                        integral de residuos sólidos municipales y no municipales.</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Diseño de
+                                        Planes de Contingencia y Emergencia en manejo de residuos peligrosos.
+                                    </li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Manejo de
+                                        residuos solidos no peligrosos y peligrosos para industrias, centros comerciales
+                                        y establecimientos de salud.</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Diseño de
+                                        Planes de minimización y manejo de residuos solidos para industrias, centros
+                                        comerciales y establecimientos de salud.</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Diseño de
+                                        instalaciones para el manejo de residuos solidos y sistemas de tratamiento de
+                                        aguas residuales domesticas e industriales.</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Expedientes de
+                                        valores máximos admisibles al alcantarillado (VMA) ante sedapal para industrias,
+                                        centros comerciales y establecimientos de salud.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Servicio 4: Estudios Sociales (Segunda Fila) -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="servicio-card border-0">
-                            <img src="imagenes/estudios-sociales.png" alt="Estudios Sociales"
-                                class="img-fluid mb-2 rounded">
-                            <h3 class="servicio-titulo text-center">Estudios Sociales</h3>
+                    <!-- 4. MODELAMIENTO Y SIMULACIÓN AMBIENTAL -->
+                    <div class="col-lg-6">
+                        <div class="servicio-card border p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-laptop-code fa-2x text-success me-3"></i>
+                                <h3 class="servicio-titulo h4 m-0">4. Simulación Ambiental</h3>
+                            </div>
+                            <div class="servicio-contenido mt-3">
+                                <ul class="list-unstyled text-muted small">
+                                    <li class="mb-2">
+                                        <i class="bi bi-chevron-right text-success me-2"></i>Modelamiento de calidad de
+                                        agua superficial y subterránea.[cite: 4]
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-chevron-right text-success me-2"></i>Modelamiento de dispersión
+                                        de contaminantes atmosféricos mediante el uso de los softwares <strong>Calpuff,
+                                            Aermod, Screen View</strong>.[cite: 4]
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-chevron-right text-success me-2"></i>Modelamiento de ruido
+                                        ambiental para diversos tipos de actividades productivas (<strong>SOUNDPLAN
+                                            Noise</strong>).[cite: 4]
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-chevron-right text-success me-2"></i>Modelamiento de
+                                        contaminantes microbiológicos.[cite: 4]
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-chevron-right text-success me-2"></i>Modelamiento de Calidad de
+                                        Suelos.[cite: 4]
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-chevron-right text-success me-2"></i>Modelamiento de
+                                        vibraciones.[cite: 4]
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Servicio 5: Monitoreo Ambiental -->
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="servicio-card border-0">
-                            <img src="imagenes/monitoreo-ambiental-2.png" alt="Monitoreo Ambiental"
-                                class="img-fluid mb-2 rounded">
-                            <h3 class="servicio-titulo text-center">Monitoreo Ambiental</h3>
+                    <!-- 5. GESTIÓN DE RIESGOS DE DESASTRES (GRD) -->
+                    <div class="col-12">
+                        <div class="servicio-card border p-4 bg-light shadow-sm">
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fas fa-shield-alt fa-2x text-danger me-3"></i>
+                                <h3 class="servicio-titulo h4 m-0">5. Gestión de Riesgos de Desastres (GRD)</h3>
+                            </div>
+
+                            <!-- Acordeón para los puntos de Gestión de Riesgos -->
+                            <div class="accordion accordion-flush" id="accGestionRiesgos">
+
+                                <!-- Diagnóstico y Evaluación del Riesgo -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#grd-1">
+                                            Diagnóstico y Evaluación del Riesgo
+                                        </button>
+                                    </h2>
+                                    <div id="grd-1" class="accordion-collapse collapse"
+                                        data-bs-parent="#accGestionRiesgos">
+                                        <div class="accordion-body small text-muted">
+                                            <p><strong>Descripción:</strong> Identificación, análisis y estimación de
+                                                niveles de riesgo ante fenómenos naturales o antrópicos.</p>
+                                            <p><strong>Alcance:</strong> Levantamiento de información, elaboración de
+                                                mapas de peligro y vulnerabilidad, aplicación de metodologías
+                                                CENEPRED.[cite: 4]</p>
+                                            <p><strong>Beneficiarios:</strong> Gobiernos locales, regionales y empresas
+                                                privadas.[cite: 4]</p>
+                                            <p><strong>Normativa:</strong> Ley N° 29664 – SINAGERD; D.S. N°
+                                                048-2011-PCM.[cite: 4]</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Estudios Técnicos y Ambientales -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#grd-2">
+                                            Estudios Técnicos y Ambientales Complementarios
+                                        </button>
+                                    </h2>
+                                    <div id="grd-2" class="accordion-collapse collapse"
+                                        data-bs-parent="#accGestionRiesgos">
+                                        <div class="accordion-body small text-muted">
+                                            <p><strong>Descripción:</strong> Análisis especializado para integrar la
+                                                gestión del riesgo en proyectos de inversión.[cite: 4]</p>
+                                            <p><strong>Alcance:</strong> Elaboración de EIR, EIA con componente de
+                                                riesgo, estudios de estabilidad y delimitación de zonas no
+                                                mitigables.[cite: 4]</p>
+                                            <p><strong>Beneficiarios:</strong> Promotores de inversión, municipalidades,
+                                                sector construcción y transporte.[cite: 4]</p>
+                                            <p><strong>Normativa:</strong> D.S. N° 018-2014-PCM; Reglamento SEIA.[cite:
+                                                4]</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Gestión y Reducción del Riesgo -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#grd-3">
+                                            Gestión y Reducción del Riesgo
+                                        </button>
+                                    </h2>
+                                    <div id="grd-3" class="accordion-collapse collapse"
+                                        data-bs-parent="#accGestionRiesgos">
+                                        <div class="accordion-body small text-muted">
+                                            <p><strong>Descripción:</strong> Formulación e implementación de medidas
+                                                estructurales y no estructurales para prevenir desastres.[cite: 4]</p>
+                                            <p><strong>Alcance:</strong> Planes PPRRD, diseño de obras de mitigación,
+                                                asistencia técnica y planificación territorial.[cite: 4]</p>
+                                            <p><strong>Beneficiarios:</strong> Gobiernos locales y regionales,
+                                                comunidades, desarrolladores urbanos.[cite: 4]</p>
+                                            <p><strong>Normativa:</strong> D.S. N° 111-2012-PCM; Lineamientos
+                                                CENEPRED.[cite: 4]</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Preparación y Respuesta -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#grd-4">
+                                            Preparación y Respuesta ante Desastres
+                                        </button>
+                                    </h2>
+                                    <div id="grd-4" class="accordion-collapse collapse"
+                                        data-bs-parent="#accGestionRiesgos">
+                                        <div class="accordion-body small text-muted">
+                                            <p><strong>Descripción:</strong> Fortalecimiento de capacidades
+                                                institucionales y comunitarias ante emergencias.[cite: 4]</p>
+                                            <p><strong>Alcance:</strong> Elaboración de planes de contingencia, sistemas
+                                                de alerta temprana y capacitación de brigadas.[cite: 4]</p>
+                                            <p><strong>Beneficiarios:</strong> Municipalidades, empresas industriales,
+                                                mineras y educativas.[cite: 4]</p>
+                                            <p><strong>Normativa:</strong> Guía CENEPRED 2018; Normas INDECI.[cite: 4]
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Recuperación y Reconstrucción -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#grd-5">
+                                            Recuperación y Reconstrucción Post Desastre
+                                        </button>
+                                    </h2>
+                                    <div id="grd-5" class="accordion-collapse collapse"
+                                        data-bs-parent="#accGestionRiesgos">
+                                        <div class="accordion-body small text-muted">
+                                            <p><strong>Descripción:</strong> Asesoría en procesos de recuperación
+                                                sostenible tras desastres.[cite: 4]</p>
+                                            <p><strong>Alcance:</strong> Evaluación de daños, planes de reconstrucción y
+                                                seguimiento de proyectos post desastre.[cite: 4]</p>
+                                            <p><strong>Beneficiarios:</strong> Gobiernos regionales, entidades del
+                                                Estado, organismos internacionales.[cite: 4]</p>
+                                            <p><strong>Normativa:</strong> D.S. N° 094-2018-PCM; SINAGERD.[cite: 4]</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Monitoreo y Tecnologías -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#grd-6">
+                                            Monitoreo, Geomática y Tecnologías Aplicadas
+                                        </button>
+                                    </h2>
+                                    <div id="grd-6" class="accordion-collapse collapse"
+                                        data-bs-parent="#accGestionRiesgos">
+                                        <div class="accordion-body small text-muted">
+                                            <p><strong>Descripción:</strong> Uso de tecnologías geoespaciales para
+                                                evaluación y monitoreo del riesgo.[cite: 4]</p>
+                                            <p><strong>Alcance:</strong> Monitoreo con imágenes satelitales y drones,
+                                                bases georreferenciadas y modelamiento digital.[cite: 4]</p>
+                                            <p><strong>Beneficiarios:</strong> Instituciones públicas, universidades y
+                                                proyectos de desarrollo territorial.[cite: 4]</p>
+                                            <p><strong>Normativa:</strong> Lineamientos CENEPRED 2021; Política Nacional
+                                                de Información Geoespacial (IGN).[cite: 4]</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Capacitación y Asesoría -->
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#grd-7">
+                                            Capacitación y Asesoría Institucional
+                                        </button>
+                                    </h2>
+                                    <div id="grd-7" class="accordion-collapse collapse"
+                                        data-bs-parent="#accGestionRiesgos">
+                                        <div class="accordion-body small text-muted">
+                                            <p><strong>Descripción:</strong> Desarrollo de capacidades técnicas e
+                                                institucionales en gestión del riesgo.[cite: 4]</p>
+                                            <p><strong>Alcance:</strong> Programas de capacitación, asesoría a gobiernos
+                                                locales y educación comunitaria.[cite: 4]</p>
+                                            <p><strong>Beneficiarios:</strong> Funcionarios públicos, comunidades y
+                                                empresas privadas.[cite: 4]</p>
+                                            <p><strong>Normativa:</strong> PLANAGERD 2022–2030; CENEPRED e INDECI.[cite:
+                                                4]</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
+
+
 
         <!-- Llamada a la Acción Final (Mismo patrón que nosotros.html) -->
         <section class="bg-light py-5 border-top CTA-final">
