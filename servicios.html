@@ -14,159 +14,1344 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- CSS EXTERNO (Reutilizando index y creando servicios.css) -->
+    <!-- CSS EXTERNO -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/servicios.css">
 </head>
 
 <body>
 
-    <!-- Placeholder para Navegación -->
     <div id="nav-placeholder"></div>
 
     <main>
-        <!-- Banner Superior (Siguiendo el patrón de nosotros.html) -->
+        <!-- Banner Superior (Patrón Institucional) -->
         <header class="servicios-header py-4">
             <div class="container text-center">
-                <h1 class="text-uppercase fw-bold m-0 text-white">Servicios</h1>
+                <h1 class="text-uppercase fw-bold m-0 text-white">Nuestros Servicios</h1>
             </div>
         </header>
 
-        <!-- SECCIÓN DE LISTADO DE SERVICIOS -->
-        <section class="py-5 bg-white">
-            <div class="container">
-                <div class="row g-4">
 
-                    <!-- 1. TOPOGRAFÍA Y GEOMÁTICA -->
-                    <div class="col-lg-6">
-                        <div class="servicio-card border p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-map-marked-alt fa-2x text-success me-3"></i>
-                                <h3 class="servicio-titulo h4 m-0">1. Topografía y Geomática</h3>
+        <section id="servicios" class="servicios-section py-5">
+            <div class="container text-center">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fas fa-leaf"></i>
                             </div>
-                            <img src="imagenes/topografia.jpeg" class="img-fluid" alt="Topografía">
-                            <div class="accordion accordion-flush" id="accTopografia">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed py-2" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#top-1">
-                                            Topografía Convencional y Drones
-                                        </button>
-                                    </h2>
-                                    <div id="top-1" class="accordion-collapse collapse" data-bs-parent="#accTopografia">
-                                        <div class="accordion-body text-muted small">
-                                            <ul>
-                                                <li>Redes de control geodésico y topográfico.</li>
-                                                <li>Levantamientos aerotransportados (Drones).</li>
-                                                <li>Trazos, replanteos y control de movimiento de tierras.</li>
-                                                <li>Levantamiento topográfico para proyectos de obras de agua y
-                                                    alcantarillado, vías de transporte, líneas de transmisión eléctrica
-                                                    edificaciones y habilitaciones urbanas</li>
-                                            </ul>
+                            <h6 class="mb-0">CONSULTORÍA AMBIENTAL</h6>
+                            <a href="#modalConsultoriaAmbiental" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalConsultoriaAmbiental" onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h6 class="mb-0">MONITOREO AMBIENTAL</h6>
+                            <a href="#modalMonitoreoAmbiental" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalMonitoreoAmbiental" onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h6 class="mb-0">MONITOREO OCUPACIONAL</h6>
+                            <a href="#modalMonitoreoOcupacional" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalMonitoreoOcupacional" onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h6 class="mb-0">EXPEDIENTE PARA
+                                PERMISOS AMBIENTALES</h6>
+                            <a href="#modalExpedientePermisosAmbientales" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalExpedientePermisosAmbientales"
+                                onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fas fa-edit"></i>
+                            </div>
+                            <h6 class="mb-0">ESTUDIOS AMBIENTALES</h6>
+                            <a href="#modalEstudiosAmbientales" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalEstudiosAmbientales" onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h6 class="mb-0">ESTUDIOS SOCIALES</h6>
+                            <a href="#modalEstudiosSociales" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalEstudiosSociales" onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <h6 class="mb-0">IMPLEMENTACIÓN DE SISTEMAS DE GESTIÓN</h6>
+                            <a href="#modalImplementacionSistemaDeGestion" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalImplementacionSistemaDeGestion"
+                                onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fa-solid fa-mountain"></i>
+                            </div>
+                            <h6 class="mb-0">TOPOGRAFÍA Y GEOMÁTICA</h6>
+                            <a href="#modalTopografiaYGeomatica" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalTopografiaYGeomatica" onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <h6 class="mb-0">INGENIERÍA Y SOLUCIONES TÉCNICAS</h6>
+                            <a href="#modalIngenieriaYSolucionesTecnicas" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalIngenieriaYSolucionesTecnicas"
+                                onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fa-solid fa-truck"></i>
+                            </div>
+                            <h6 class="mb-0">GESTIÓN DE RESIDUOS</h6>
+                            <a href="#modalGestionDeResiduos" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalGestionDeResiduos" onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-trash-can-arrow-up"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h6 class="mb-0">MODELAMIENTO Y SIMULACIÓN AMBIENTAL</h6>
+                            <a href="#modalModelamientoYSimulacionAmbiental" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalModelamientoYSimulacionAmbiental"
+                                onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-6 col-lg-2-custom mb-5">
+                        <div class="servicio-item">
+                            <div class="icono-circular">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <h6 class="mb-0">GESTIÓN DE RIESGOS DE DESASTRES</h6>
+                            <a href="#modalGestionDeRiesgosDeDesastres" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#modalGestionDeRiesgosDeDesastres"
+                                onclick="event.stopPropagation();">Ver
+                                Más <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+
+    <!-- MODALES -->
+    <div class="modal fade" id="modalConsultoriaAmbiental" tabindex="-1"
+        aria-labelledby="modalConsultoriaAmbientalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header header-modal-verde">
+                    <h5 class="modal-title" id="modalConsultoriaAmbientalLabel">
+                        <i class="fas fa-leaf me-2"></i> CONSULTORÍA AMBIENTAL
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="imagenes/consultoria-ambiental-modal.jpeg" class="img-fluid shadow-lg rounded mb-4"
+                        alt="Consultoría Ambiental">
+                    <p class="modal-texto-intro">
+                        En <strong>PANAGREEN</strong> desarrollamos Instrumentos de Gestión Ambiental (IGAs) orientados
+                        a la certificación de proyectos de inversión públicos y privados, cumpliendo con los
+                        lineamientos del Sistema Nacional de Evaluación de Impacto Ambiental (SEIA) y la normativa
+                        vigente. Nuestro compromiso es ofrecer soluciones técnicas y legales que aseguren la
+                        sostenibilidad y el cumplimiento regulatorio de cada proyecto.
+                    </p>
+
+                    <hr class="modal-separador">
+
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja">
+                                <h6 class="modal-subtitulo-azul">
+                                    <i class="fas fa-check-circle me-2 text-success"></i>
+                                    Estudios ambientales sujetos al SEIA
+                                </h6>
+                                <ul class="modal-lista-items">
+                                    <li>Declaración de Impacto Ambiental (DIA)</li>
+                                    <li>Estudio de Impacto Ambiental Semidetallado (EIA-sd)</li>
+                                    <li>Estudio de Impacto Ambiental Detallado (EIA-d)</li>
+                                    <li>Estudios ambientales de proyectos y actividades</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja">
+                                <h6 class="modal-subtitulo-azul">
+                                    <i class="fas fa-file-alt me-2 text-primary"></i>
+                                    Estudios ambientales complementarios y no sujetos al SEIA
+                                </h6>
+                                <ul class="modal-lista-items">
+                                    <li>Evaluación Ambiental Preliminar (EVAP).</li>
+                                    <li>Fichas Técnicas Ambientales (FTA) - sector Vivienda.</li>
+                                    <li>Fichas Técnicas Socioambientales (FITSA) - sector Transportes.</li>
+                                    <li>Informe Técnico Sustentatorio (ITS).</li>
+                                    <li>Programa de Adecuación y Manejo Ambiental (PAMA).</li>
+                                    <li>Declaración Ambiental para Actividades en Curso (DAAC) - sector Producción.</li>
+                                    <li>Declaración de Inicio de Actividades en Curso (DAAC) - sector Agricultura.</li>
+                                    <li>Informes de Gestión Ambiental (IGA).</li>
+                                    <li>Planes de Cierre y Abandono.</li>
+                                    <li>Planes de Manejo y Reducción de Residuos Sólidos.</li>
+                                    <li>Planes de Contingencia.</li>
+                                    <li>Planes de Afectaciones y Compensaciones.</li>
+                                    <li>Planes de Rehabilitación de Áreas Degradadas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMonitoreoAmbiental" tabindex="-1" aria-labelledby="modalMonitoreoAmbientalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+
+                <div class="modal-header header-modal-verde">
+                    <h5 class="modal-title" id="modalMonitoreoAmbientalLabel">
+                        <i class="fas fa-desktop me-2"></i> MONITOREO AMBIENTAL
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body pt-4 pb-0 px-4 px-md-5">
+
+                    <div class="mb-4 overflow-hidden rounded-3 shadow-sm">
+                        <img src="imagenes/monitoreo-ambiental.png" alt="Monitoreo Ambiental"
+                            class="img-fluid w-100 body-modal-img">
+                    </div>
+
+                    <p class="text-justify mb-4">
+                        Realizamos programas de monitoreo ambiental que permiten evaluar y garantizar el cumplimiento de
+                        los estándares nacionales e internacionales, asegurando que cada proyecto se desarrolle en
+                        armonía con el entorno.
+                    </p>
+
+                    <h5 class="text-uppercase mb-3 title-green fw-bold">Nuestros servicios incluyen</h5>
+
+                    <ul class="list-unstyled service-list-custom mb-4">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-wind me-3 mt-1 icon-green"></i>
+                            <div>
+                                <strong>Calidad del aire:</strong> Evaluaciones periódicas de emisiones y partículas,
+                                aplicando protocolos oficiales y tecnologías de medición confiables.
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-volume-up me-3 mt-1 icon-green"></i>
+                            <div>
+                                <strong>Ruido ambiental:</strong> Monitoreos en zonas urbanas y rurales para verificar
+                                niveles sonoros y diseñar medidas de mitigación.
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-water me-3 mt-1 icon-green"></i>
+                            <div>
+                                <strong>Calidad del agua:</strong> Muestreos en cuerpos superficiales y subterráneos,
+                                con análisis físico, químicos y biológicos que aseguran la protección de los recursos
+                                hídricos.
+                            </div>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="fas fa-seedling me-3 mt-1 icon-green"></i>
+                            <div>
+                                <strong>Calidad del suelo:</strong> Estudios de composición y contaminación de suelos,
+                                aplicando metodologías reconocidas para garantizar un manejo responsable.
+                            </div>
+                        </li>
+                        <li class="mb-0 d-flex align-items-start">
+                            <i class="fas fa-smog me-3 mt-1 icon-green"></i>
+                            <div>
+                                <strong>Emisiones atmosféricas:</strong> Monitoreos especializados de fuentes fijas
+                                (chimeneas, calderas, hornos) para evaluar la concentración de gases y partículas
+                                emitidas. Aplicamos metodologías oficiales y equipos calibrados que garantizan
+                                resultados confiables, permitiendo a las empresas cumplir con la normativa ambiental
+                                vigente y diseñar planes de mitigación efectivos.
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <div class="modal-lista-caja">
+                        <h6 class="modal-subtitulo-azul mb-3">
+                            <i class="fas fa-handshake me-2 text-primary"></i>
+                            NUESTRO COMPROMISO
+                        </h6>
+
+                        <p class="small text-muted mt-3 mb-0" style="text-align: justify; line-height: 1.5;">
+                            Entregar información precisa y transparente que respalde la toma de decisiones,
+                            contribuyendo a la sostenibilidad y al cumplimiento normativo de cada proyecto.
+                        </p>
+
+                        <div class="p-3 rounded d-flex align-items-center justify-content-between"
+                            style="background-color: #f8f9fa; border: 1px solid #e9ecef;">
+                            <div class="pe-3">
+                                <span class="d-block fw-bold text-dark text-uppercase mb-1"
+                                    style="letter-spacing: 0.5px; font-size: 0.75rem;">
+                                    Trabajamos con
+                                </span>
+                                <span class="d-block text-muted"
+                                    style="font-size: 0.75rem; line-height: 1.4; text-align: justify;">
+                                    Laboratorios acreditados por INACAL.
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center"
+                                style="min-width: 100px; max-width: 120px;">
+                                <img src="imagenes/inacal.png" alt="INACAL" class="img-fluid"
+                                    style="max-height: 45px; object-fit: contain;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="imagenes/laboratorio1.jpeg" class="img-fluid w-100 body-modal-img rounded-3"
+                                    alt="laboratorio" style="margin-top: 20px;">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="imagenes/laboratorio2.jpeg" class="img-fluid w-100 body-modal-img rounded-3"
+                                    alt="laboratorio" style="margin-top: 20px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMonitoreoOcupacional" tabindex="-1"
+        aria-labelledby="modalMonitoreoOcupacionalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header header-modal-verde">
+                    <h5 class="modal-title" id="modalMonitoreoOcupacionalLabel">
+                        <i class="fas fa-user-shield me-2"></i> MONITOREO OCUPACIONAL Y CAPACITACIÓN
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja">
+                                <h6 class="modal-subtitulo-azul">
+                                    <i class="fas fa-chalkboard-teacher me-2 text-success"></i>
+                                    CAPACITACIÓN Y ENTRENAMIENTO
+                                </h6>
+                                <img src="imagenes/capacitacion-entrenamiento.jpeg"
+                                    class="img-fluid shadow-sm rounded mb-3" alt="Capacitación y Entrenamiento">
+                                <ul class="modal-lista-items">
+                                    <li>Gestión de Riesgos Ocupacionales</li>
+                                    <li>Prevención de Accidentes Laborales</li>
+                                    <li>Prevención y Control de Incendios</li>
+                                    <li>Riesgos Laborales (trabajos en altura, espacios confinados, trabajos eléctricos,
+                                        trabajos en construcción, trabajos en caliente, otros)</li>
+                                    <li>Equipos de Protección Personal</li>
+                                    <li>Investigación de Accidentes</li>
+                                    <li>Saneamiento Industrial</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja">
+                                <h6 class="modal-subtitulo-azul">
+                                    <i class="fas fa-microscope me-2 text-primary"></i>
+                                    MONITOREO OCUPACIONAL
+                                </h6>
+                                <img src="imagenes/monitoreo-ocupacional-interior.jpeg"
+                                    class="img-fluid shadow-sm rounded mb-3" alt="Monitoreo Ocupacional">
+
+                                <ul class="modal-lista-items">
+                                    <li>Monitoreo de agentes físicos (Ruido, Vibración, Estrés térmico, etc.)</li>
+                                    <li>Monitoreo de agentes químicos (Polvo, gases, humos, etc.)</li>
+                                    <li>Monitoreo de agentes biológicos</li>
+                                    <li>Monitoreo de riesgo disergonómico</li>
+                                    <li>Evaluaciones Psicosociales</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Sección de Galería de Imágenes -->
+                    <section class="py-5 bg-white">
+                        <div class="container">
+                            <div class="row g-3">
+
+                                <!-- Imagen 1 -->
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="galeria-item card border-0">
+                                        <img src="imagenes/monitoreo-ocupacional-1.jpeg" alt="Monitoreo Ocupacional"
+                                            class="img-fluid rounded shadow-sm">
+                                        <div class="galeria-overlay d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold text-uppercase">Monitoreo Ocupacional</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed py-2" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#top-2">
-                                            GIS y Análisis Espacial
-                                        </button>
-                                    </h2>
-                                    <div id="top-2" class="accordion-collapse collapse" data-bs-parent="#accTopografia">
-                                        <div class="accordion-body text-muted small">
-                                            <ul>
-                                                <li>Desarrollo de Sistemas de Información Geográfica (GIS) en diversos
-                                                    campos como: Hidrología, Vías de Transporte, Estudios Ambientales,
-                                                    Saneamiento y Arqueología. </li>
-                                                <li>Desarrollo de sistemas de información catastral (urbano, rural y de
-                                                    infraestructuras).</li>
-                                                <li>Diseño de mapas base y mapas temáticos</li>
-                                            </ul>
+
+                                <!-- Imagen 2 -->
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="galeria-item card border-0">
+                                        <img src="imagenes/monitoreo-ocupacional-2.jpeg" alt="Monitoreo Ocupacional"
+                                            class="img-fluid rounded shadow-sm">
+                                        <div class="galeria-overlay d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold text-uppercase">Monitoreo Ocupacional</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed py-2" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#top-3">
-                                            Cartografía, Teledetección y Catastro
-                                        </button>
-                                    </h2>
-                                    <div id="top-3" class="accordion-collapse collapse" data-bs-parent="#accTopografia">
-                                        <div class="accordion-body text-muted small">
-                                            <ul>
-                                                <li>Procesamiento de imágenes satelitales para la identificación de
-                                                    cobertura vegetal, uso actual de suelos, retroceso de nevados,
-                                                    desertificación, cambios en la cobertura vegetal, salud de cultivos
-                                                    agrícolas, delimitación de fajas marginales y comportamiento de
-                                                    cauce de ríos.</li>
-                                                <li>Generación de cartografía mediante métodos fotogramétricos. </li>
-                                                <li>Desarrollo de proyectos de catastro urbano, rural y de
-                                                    infraestructuras.</li>
-                                            </ul>
+
+                                <!-- Imagen 3 -->
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="galeria-item card border-0">
+                                        <img src="imagenes/monitoreo-ocupacional-3.jpeg" alt="Monitoreo Ocupacional"
+                                            class="img-fluid rounded shadow-sm">
+                                        <div class="galeria-overlay d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold text-uppercase">Monitoreo Ocupacional</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Imagen 4 -->
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="galeria-item card border-0">
+                                        <img src="imagenes/monitoreo-ocupacional-4.jpeg" alt="Monitoreo Ocupacional"
+                                            class="img-fluid rounded shadow-sm">
+                                        <div class="galeria-overlay d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold text-uppercase">Monitoreo Ocupacional</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Imagen 5 -->
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="galeria-item card border-0">
+                                        <img src="imagenes/monitoreo-ocupacional-5.jpeg" alt="Monitoreo Ocupacional"
+                                            class="img-fluid rounded shadow-sm">
+                                        <div class="galeria-overlay d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold text-uppercase">Monitoreo Ocupacional</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Imagen 6 -->
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="galeria-item card border-0">
+                                        <img src="imagenes/monitoreo-ocupacional-6.jpeg" alt="Monitoreo Ocupacional"
+                                            class="img-fluid rounded shadow-sm">
+                                        <div class="galeria-overlay d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold text-uppercase">Monitoreo Ocupacional</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalExpedientePermisosAmbientales" tabindex="-1"
+        aria-labelledby="modalExpedientePermisosAmbientalesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header header-modal-verde">
+                    <h5 class="modal-title" id="modalExpedientePermisosAmbientalesLabel">
+                        <i class="fas fa-file-alt me-2"></i> EXPEDIENTE Y PERMISOS AMBIENTALES
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="imagenes/expediente-permisos-ambientales.jpeg" class="img-fluid shadow-sm rounded mb-3"
+                        alt="Expediente y Permisos Ambientales">
+
+                    <p class="mb-4 text-muted" style="text-align: justify; font-size: 0.95rem;">
+                        Brindamos acompañamiento integral en la tramitación de permisos y autorizaciones ambientales,
+                        asegurando que cada proyecto cumpla con la normativa vigente y se ejecute de manera responsable
+                        frente al entorno natural y cultural.
+                    </p>
+
+                    <h6 class="modal-subtitulo-azul mb-3">
+                        <i class="fa-solid fa-gavel me-2 text-success"></i> ENTIDADES Y PROCESOS CLAVE
+                    </h6>
+
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja h-100">
+                                <ul class="modal-lista-items mb-0">
+                                    <li class="mb-3">
+                                        <strong>Autoridad Nacional del Agua (ANA):</strong><br>
+                                        Licencias de uso de agua, autorizaciones para obras hidráulicas y permisos de
+                                        vertimiento de aguas residuales.
+                                    </li>
+                                    <li>
+                                        <strong>Servicio Nacional de Áreas Naturales Protegidas por el Estado
+                                            (SERNANP):</strong><br>
+                                        Opiniones técnicas de compatibilidad para proyectos en zonas de amortiguamiento
+                                        o
+                                        dentro de áreas naturales protegidas.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja h-100">
+                                <ul class="modal-lista-items mb-0">
+                                    <li class="mb-3">
+                                        <strong>Ministerio de Cultura:</strong><br>
+                                        Certificados de inexistencia de restos arqueológicos (CIRA), planes de
+                                        monitoreo,
+                                        rescate y evaluación arqueológica.
+                                    </li>
+                                    <li>
+                                        <strong>Servicio Nacional Forestal y de Fauna Silvestre (SERFOR):</strong><br>
+                                        Autorizaciones para la evaluación de afectaciones al patrimonio forestal y de
+                                        fauna
+                                        silvestre, con medidas de compensación y manejo sostenible.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 rounded"
+                        style="background-color: rgba(7, 71, 81, 0.05); border-left: 4px solid var(--azul-panagreen);">
+                        <h6 class="fw-bold mb-2"
+                            style="color: var(--azul-panagreen); font-size: 0.9rem; letter-spacing: 0.5px;"><i
+                                class="fas fa-handshake me-2 text-primary"></i> NUESTRO
+                            COMPROMISO</h6>
+                        <p class="mb-0 text-muted" style="font-size: 0.9rem; text-align: justify;">
+                            Facilitar procesos claros y eficientes, integrando la normativa ambiental con soluciones
+                            técnicas que aseguren la viabilidad de los proyectos y el respeto por el patrimonio natural
+                            y
+                            cultural del Perú.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modalEstudiosAmbientales" tabindex="-1" aria-labelledby="modalEstudiosAmbientalesLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+
+                <div class="modal-header header-modal-verde p-3 p-md-4">
+                    <h5 class="modal-title" id="modalEstudiosAmbientalesLabel"
+                        style="font-size: calc(1.1rem + 0.3vw); font-weight: 700;">
+                        <i class="fa-solid fa-earth-americas me-2"></i> ESTUDIOS AMBIENTALES DE PROYECTOS Y ACTIVIDADES
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-3 p-md-4">
+
+                    <p class="mb-4 text-muted"
+                        style="text-align: justify; font-size: calc(0.9rem + 0.1vw); line-height: 1.5;">
+                        Desarrollamos estudios ambientales especializados y evaluaciones de impacto ambiental adaptados
+                        a las normativas específicas de cada sector, garantizando la viabilidad técnica y la
+                        sostenibilidad de cada intervención.
+                    </p>
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <!-- VIVIENDA Y CONSTRUCCIÓN -->
+                            <h6 class="modal-subtitulo-azul mb-3 fw-bold text-uppercase"
+                                style="letter-spacing:.5px; font-size:.9rem;">
+                                <i class="fa-solid fa-building me-2 text-success"></i> Vivienda y Construcción
+                            </h6>
+                            <div class="row g-2 mb-4">
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/vivienda-1.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Habilitaciones Urbanas">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Habilitaciones Residenciales y Urbanas, Viviendas Multifamiliares y/o
+                                                Conjuntos
+                                                Residenciales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/vivienda-2.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Playas de Estacionamiento">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Edificaciones de playas de estacionamiento y proyectos de demolición y
+                                                edificaciones.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/vivienda-3.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Parques Metropolitanos">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Proyectos de parques metropolitanos y/o parques zonales.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div><!-- /vivienda -->
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <!-- SANEAMIENTO -->
+                            <h6 class="modal-subtitulo-azul mb-3 fw-bold text-uppercase"
+                                style="letter-spacing:.5px; font-size:.9rem;">
+                                <i class="bi bi-droplet-fill me-2 text-success"></i> Saneamiento
+                            </h6>
+                            <div class="row g-2 mb-4">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 w-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/saneamiento-1.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Sistemas de Tratamiento">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Sistemas de tratamiento de agua potable y aguas residuales domésticas o
+                                                municipales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/saneamiento-2.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Drenaje Pluvial Urbano">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Drenaje pluvial urbano y redes de aguas residuales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div><!-- /saneamiento -->
+
+
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <!-- AGRICULTURA -->
+                            <h6 class="modal-subtitulo-azul mb-3 fw-bold text-uppercase"
+                                style="letter-spacing:.5px; font-size:.9rem;">
+                                <i class="fa-solid fa-seedling me-2 text-success"></i> Agricultura
+                            </h6>
+                            <div class="row g-2 mb-4">
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/agricultura-1.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Proyectos de Irrigación">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Proyectos de irrigación y mejoramiento de riego. Aprovechamiento de
+                                                aguas subterráneas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/agricultura-2.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Construcciones Rurales">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Construcciones rurales y vías de acceso vinculadas a tierras de uso
+                                                agrario.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /agricultura -->
+                        </div>
                     </div>
 
-                    <!-- 2. INGENIERÍA Y SOLUCIONES TÉCNICAS -->
-                    <div class="col-lg-6">
-                        <div class="servicio-card border p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-tools fa-2x text-success me-3"></i>
-                                <h3 class="servicio-titulo h4 m-0">2. Ingeniería y Soluciones Técnicas</h3>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-12 col-sm-12">
+
+                            <!-- PRODUCCIÓN -->
+                            <h6 class="modal-subtitulo-azul mb-3 fw-bold text-uppercase"
+                                style="letter-spacing:.5px; font-size:.9rem;">
+                                <i class="fa-solid fa-industry me-2 text-success"></i> Producción
+                            </h6>
+                            <div class="row g-2 mb-4">
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/produccion-1.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Industria Textil y Plástica">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Industria textil y plástica.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/produccion-2.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Industria Concretera">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Industria concretera.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- /produccion -->
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <!-- TRANSPORTES -->
+                            <h6 class="modal-subtitulo-azul mb-3 fw-bold text-uppercase"
+                                style="letter-spacing:.5px; font-size:.9rem;">
+                                <i class="fa-solid fa-road me-2 text-success"></i> Transportes
+                            </h6>
+                            <div class="row g-2 mb-4">
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/transportes-1.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Caminos Red Vial">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Mejoramiento y/o rehabilitación de caminos de la red vial nacional.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/transportes-2.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Puentes y Túneles">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Construcción, rehabilitación y/o mejoramiento de puentes y túneles.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/transportes-3.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Pavimentación de Vías">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Pavimentación de avenidas y/o vías principales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <img src="imagenes/servicios-ingenieria-soluciones.jpeg" class="img-fluid"
-                                alt="Servicios de Ingeniería y Soluciones">
-                            <div class="accordion accordion-flush" id="accIngenieria">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed py-2" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#ing-1">
-                                            Nuestras Especialidades
-                                        </button>
-                                    </h2>
-                                    <div id="ing-1" class="accordion-collapse collapse" data-bs-parent="#accIngenieria">
-                                        <div class="accordion-body text-muted small">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <ul class="mb-0">
-                                                        <li>Construcción y Ejecución de Obras Civiles</li>
-                                                        <li>Supervisión y Dirección Técnica de Obras</li>
-                                                        <li>Elaboración de Expedientes Técnicos a Nivel de Ejecución
-                                                        </li>
-                                                        <li>Formulación de Perfiles Técnico-Económicos</li>
-                                                        <li>Estudios de Preinversión y Factibilidad</li>
-                                                        <li>Diseño y Cálculo Estructural</li>
-                                                        <li>Diseño de Infraestructura Civil e Industrial</li>
-                                                        <li>Obras de Movimiento de Tierras y Plataformado</li>
-                                                        <li>Obras de Pavimentación y Vías de Acceso</li>
-                                                        <li>Obras de Concreto Armado y Estructuras Metálicas</li>
-                                                        <li>Diseño e Implementación de Sistemas de Puesta a Tierra</li>
-                                                        <li>Instalaciones Eléctricas de Baja y Media Tensión</li>
-                                                        <li>Instalaciones Sanitarias y Redes Hidráulicas</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="mb-0">
-                                                        <li>Diseño e Implementación de Redes Contra Incendio</li>
-                                                        <li>Diseño de Sistemas HVAC / Aire Acondicionado y Ventilación
-                                                        </li>
-                                                        <li>Automatización y Control de Procesos Industriales</li>
-                                                        <li>Montaje Electromecánico</li>
-                                                        <li>Mantenimiento Integral de Infraestructura e Instalaciones
-                                                        </li>
-                                                        <li>Rehabilitación y Mejoramiento de Infraestructura</li>
-                                                        <li>Inspección Técnica y Diagnóstico Estructural</li>
-                                                        <li>Levantamientos Topográficos y Replanteo de Obras</li>
-                                                        <li>Modelado BIM y Planos As-Built</li>
-                                                        <li>Arquitectura y Diseño Técnico</li>
-                                                        <li>Remodelación y Adecuación de Espacios</li>
-                                                        <li>Servicios Generales</li>
-                                                    </ul>
+
+
+                            <div class="row g-4">
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/transportes-4.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Vía Expresa">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Infraestructura de transporte urbano: Vía Expresa o Semi Expresa.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/transportes-5.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Mantenimiento">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Mantenimiento de proyectos de infraestructura de transportes en
+                                                operación.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/transportes-6.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Rehabilitación Vial">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Rehabilitación y/o mejoramiento de puentes y túneles de la red vial
+                                                nacional.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /transportes -->
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <!-- ENERGÍA Y MINAS -->
+                            <h6 class="modal-subtitulo-azul mb-3 fw-bold text-uppercase"
+                                style="letter-spacing:.5px; font-size:.9rem;">
+                                <i class="fa-solid fa-bolt me-2 text-success"></i> Energía y Minas
+                            </h6>
+                            <div class="row g-2 mb-4">
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/mineria-1.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Exploración Minera">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Proyectos de exploración y explotación minera.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/mineria-2.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Explotación Minera">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.82rem; line-height:1.4;">
+                                                Proyectos de exploración y explotación minera.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- /mineria -->
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+
+                        <div class="col-12 col-md-12 col-sm-12">
+                            <!-- OTROS SECTORES -->
+                            <h6 class="modal-subtitulo-azul mb-3 fw-bold text-uppercase"
+                                style="letter-spacing:.5px; font-size:.9rem;">
+                                <i class="fa-solid fa-ellipsis me-2 text-success"></i> Otros Sectores
+                            </h6>
+                            <div class="row g-2 mb-0">
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/otros-1.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Servicios Públicos">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Estudios ambientales de infraestructura para servicios públicos de alta
+                                                densidad:
+                                                Escuelas, Colegios, Institutos, Universidades, Centros penitenciarios,
+                                                Coliseos, Estadios y Centros culturales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <img src="imagenes/estudios/otros-2.jpeg" class="card-img-top"
+                                            style="height:100%; object-fit:cover;" alt="Servicios Públicos">
+                                        <div class="card-body p-2">
+                                            <p class="card-text text-muted" style="font-size:.78rem; line-height:1.4;">
+                                                Centros y campos deportivos o centros de recreación de cultura.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- /otros -->
+
+                        </div>
+
+                    </div><!-- /row principal -->
+
+                    <div class="p-3 mt-4 rounded"
+                        style="background-color: rgba(7, 71, 81, 0.05); border-left: 4px solid var(--azul-panagreen);">
+                        <h6 class="fw-bold mb-2"
+                            style="color: var(--azul-panagreen); font-size: 0.9rem; letter-spacing: 0.5px;">
+                            NUESTRO
+                            ENFOQUE
+                            SECTORIAL</h6>
+                        <p class="mb-0 text-muted" style="font-size: 0.88rem; text-align: justify; line-height: 1.4;">
+                            Aseguramos el cumplimiento de las líneas y directrices específicas exigidas
+                            por cada
+                            ministerio
+                            competente, facilitando la obtención de certificaciones viables y un
+                            desarrollo corporativo
+                            ambientalmente seguro.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalEstudiosSociales" tabindex="-1" aria-labelledby="modalEstudiosSocialesLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header header-modal-verde">
+                    <h5 class="modal-title" id="modalEstudiosSocialesLabel">
+                        <i class="fa-solid fa-users me-2"></i> ESTUDIOS SOCIALES
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="imagenes/estudios-sociales.jpeg" class="img-fluid shadow-sm rounded mb-3"
+                        alt="Expediente y Permisos Ambientales">
+
+                    <p class="mb-4 text-muted" style="text-align: justify; font-size: 0.95rem;">
+                        En PANAGREEN creemos que todo proyecto debe construirse en diálogo con las personas y
+                        comunidades
+                        que lo rodean. Por eso, integramos la dimensión social como un eje estratégico, generando
+                        confianza,
+                        participación y beneficios compartidos.
+                    </p>
+
+                    <h6 class="modal-subtitulo-azul mb-3">
+                        <i class="fa-solid fa-handshake-angle me-2 text-success"></i> NUESTROS APORTES
+                    </h6>
+
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja h-100">
+                                <ul class="modal-lista-items mb-0">
+                                    <li class="mb-3">
+                                        <strong>Diagnóstico social integral:</strong><br>
+                                        Análisis participativo de realidades locales, dinámicas culturales y
+                                        expectativas
+                                        comunitarias, incorporando saberes y percepciones de la población.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Participación ciudadana efectiva:</strong><br>
+                                        Procesos de diálogo, consulta y co-decisión que garantizan la incidencia real de
+                                        la
+                                        población en las intervenciones.
+                                    </li>
+                                    <li>
+                                        <strong>Fortalecimiento de capacidades:</strong><br>
+                                        Procesos de formación horizontal que potencian habilidades locales, liderazgo y
+                                        organización comunitaria.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja h-100">
+                                <ul class="modal-lista-items mb-0">
+                                    <li class="mb-3">
+                                        <strong>Gestión de actores sociales:</strong><br>
+                                        Identificación y análisis de actores, sus intereses y relaciones de poder, para
+                                        el
+                                        diseño de estrategias de articulación y manejo de conflictos.
+                                    </li>
+                                    <li class="mb-3">
+                                        <strong>Planes de desarrollo territorial:</strong><br>
+                                        Diseño participativo de estrategias que integran inversión, sostenibilidad y
+                                        enfoques culturales propios del territorio.
+                                    </li>
+                                    <li>
+                                        <strong>Relaciones comunitarias responsables:</strong><br>
+                                        Construcción de vínculos de confianza mediante mecanismos de comunicación
+                                        intercultural, prevención y gestión de conflictos.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-3 rounded"
+                        style="background-color: rgba(7, 71, 81, 0.05); border-left: 4px solid var(--azul-panagreen);">
+                        <h6 class="fw-bold mb-2"
+                            style="color: var(--azul-panagreen); font-size: 0.9rem; letter-spacing: 0.5px;"><i
+                                class="fas fa-handshake me-2 text-primary"></i> NUESTRO
+                            COMPROMISO</h6>
+                        <p class="mb-0 text-muted" style="font-size: 0.9rem; text-align: justify;">
+                            Que cada proyecto sea una oportunidad para generar valor social, respetando la diversidad
+                            cultural y promoviendo un desarrollo inclusivo y sostenible.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImplementacionSistemaDeGestion" tabindex="-1"
+        aria-labelledby="modalImplementacionSistemaDeGestionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header header-modal-verde">
+                    <h5 class="modal-title" id="modalImplementacionSistemaDeGestionLabel">
+                        <i class="fa-solid fa-gears me-2"></i> IMPLEMENTACIÓN DE SISTEMAS DE GESTIÓN
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img src="imagenes/implementacion-sistema.gestion.jpeg" class="img-fluid shadow-sm rounded mb-3"
+                        alt="Implementación de Sistemas de Gestión">
+
+
+                    <p class="mb-4 text-muted" style="text-align: justify; font-size: 0.95rem;">
+                        En PANAGREEN, brindamos servicios especializados en la implementación de sistemas de gestión
+                        orientados a mejorar la eficiencia operativa, asegurar el cumplimiento normativo y fortalecer la
+                        competitividad de su organización. Nuestro enfoque se basa en metodologías prácticas y
+                        personalizadas, adaptadas a las necesidades de cada cliente y alineadas con estándares
+                        nacionales e
+                        internacionales.
+                    </p>
+
+                    <h6 class="modal-subtitulo-azul mb-3">
+                        <i class="fa-solid fa-certificate me-2 text-success"></i> SISTEMAS Y ESTÁNDARES DE GESTIÓN
+                    </h6>
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja h-100">
+                                <ul class="modal-lista-items mb-0">
+                                    <li>Sistemas de Gestión de la Calidad - ISO 9001</li>
+                                    <li>Sistemas de Gestión Ambiental - ISO 14001</li>
+                                    <li>Sistemas de Gestión de la Inocuidad - ISO 22000</li>
+                                    <li>Sistemas de Gestión de la Seguridad y Salud Ocupacional - OHSAS 18001</li>
+                                    <li>Sistemas de Gestión de la Responsabilidad Social - ISO 26000</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="modal-lista-caja h-100">
+                                <ul class="modal-lista-items mb-0">
+                                    <li>Sistemas de Gestión de la seguridad de la información - ISO 27000</li>
+                                    <li>Sistemas de Gestión de la Energía - ISO 50001</li>
+                                    <li>Buenas Prácticas de Manufactura (BPM)</li>
+                                    <li>HACCP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTopografiaYGeomatica" tabindex="-1"
+        aria-labelledby="modalTopografiaYGeomaticaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+
+                <div class="modal-header header-modal-verde p-3 p-md-4">
+                    <h5 class="modal-title" id="modalTopografiaYGeomaticaLabel"
+                        style="font-size: calc(1.1rem + 0.3vw); font-weight: 700;">
+                        <i class="fa-solid fa-map-marked-alt me-2"></i> TOPOGRAFÍA Y GEOMÁTICA
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-3 p-md-4">
+
+                    <!-- 1. TOPOGRAFÍA Y GEOMÁTICA -->
+                    <div class="row g-4">
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+                                <img src="imagenes/topografia.jpeg" class="img-fluid" alt="Topografía">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+                                <div class="accordion accordion-flush" id="accTopografia">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed py-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#top-1">
+                                                Topografía Convencional y Drones
+                                            </button>
+                                        </h2>
+                                        <div id="top-1" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accTopografia">
+                                            <div class="accordion-body text-muted small">
+                                                <ul>
+                                                    <li>Redes de control geodésico y topográfico.</li>
+                                                    <li>Levantamientos aerotransportados (Drones).</li>
+                                                    <li>Trazos, replanteos y control de movimiento de tierras.</li>
+                                                    <li>Levantamiento topográfico para proyectos de obras de agua y
+                                                        alcantarillado, vías de transporte, líneas de transmisión
+                                                        eléctrica
+                                                        edificaciones y habilitaciones urbanas</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed py-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#top-2">
+                                                GIS y Análisis Espacial
+                                            </button>
+                                        </h2>
+                                        <div id="top-2" class="accordion-collapse collapse"
+                                            data-bs-parent="#accTopografia">
+                                            <div class="accordion-body text-muted small">
+                                                <ul>
+                                                    <li>Desarrollo de Sistemas de Información Geográfica (GIS) en
+                                                        diversos
+                                                        campos como: Hidrología, Vías de Transporte, Estudios
+                                                        Ambientales,
+                                                        Saneamiento y Arqueología. </li>
+                                                    <li>Desarrollo de sistemas de información catastral (urbano, rural y
+                                                        de
+                                                        infraestructuras).</li>
+                                                    <li>Diseño de mapas base y mapas temáticos</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed py-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#top-3">
+                                                Cartografía, Teledetección y Catastro
+                                            </button>
+                                        </h2>
+                                        <div id="top-3" class="accordion-collapse collapse"
+                                            data-bs-parent="#accTopografia">
+                                            <div class="accordion-body text-muted small">
+                                                <ul>
+                                                    <li>Procesamiento de imágenes satelitales para la identificación de
+                                                        cobertura vegetal, uso actual de suelos, retroceso de nevados,
+                                                        desertificación, cambios en la cobertura vegetal, salud de
+                                                        cultivos
+                                                        agrícolas, delimitación de fajas marginales y comportamiento de
+                                                        cauce de ríos.</li>
+                                                    <li>Generación de cartografía mediante métodos fotogramétricos.
+                                                    </li>
+                                                    <li>Desarrollo de proyectos de catastro urbano, rural y de
+                                                        infraestructuras.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIngenieriaYSolucionesTecnicas" tabindex="-1"
+        aria-labelledby="modalIngenieriaYSolucionesTecnicasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+
+                <div class="modal-header header-modal-verde p-3 p-md-4">
+                    <h5 class="modal-title" id="modalIngenieriaYSolucionesTecnicasLabel"
+                        style="font-size: calc(1.1rem + 0.3vw); font-weight: 700;">
+                        <i class="fa-solid fa-tools me-2"></i> INGENIERÍA Y SOLUCIONES TÉCNICAS
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-3 p-md-4">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+
+                                <img src="imagenes/servicios-ingenieria-soluciones.jpeg" class="img-fluid"
+                                    alt="Servicios de Ingeniería y Soluciones">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+                                <div class="accordion accordion-flush" id="accIngenieria">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed py-2" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#ing-1">
+                                                Nuestras Especialidades
+                                            </button>
+                                        </h2>
+                                        <div id="ing-1" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accIngenieria">
+                                            <div class="accordion-body text-muted small">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <ul class="mb-0">
+                                                            <li>Construcción y Ejecución de Obras Civiles</li>
+                                                            <li>Supervisión y Dirección Técnica de Obras</li>
+                                                            <li>Elaboración de Expedientes Técnicos a Nivel de Ejecución
+                                                            </li>
+                                                            <li>Formulación de Perfiles Técnico-Económicos</li>
+                                                            <li>Estudios de Preinversión y Factibilidad</li>
+                                                            <li>Diseño y Cálculo Estructural</li>
+                                                            <li>Diseño de Infraestructura Civil e Industrial</li>
+                                                            <li>Obras de Movimiento de Tierras y Plataformado</li>
+                                                            <li>Obras de Pavimentación y Vías de Acceso</li>
+                                                            <li>Obras de Concreto Armado y Estructuras Metálicas</li>
+                                                            <li>Diseño e Implementación de Sistemas de Puesta a Tierra
+                                                            </li>
+                                                            <li>Instalaciones Eléctricas de Baja y Media Tensión</li>
+                                                            <li>Instalaciones Sanitarias y Redes Hidráulicas</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <ul class="mb-0">
+                                                            <li>Diseño e Implementación de Redes Contra Incendio</li>
+                                                            <li>Diseño de Sistemas HVAC / Aire Acondicionado y
+                                                                Ventilación
+                                                            </li>
+                                                            <li>Automatización y Control de Procesos Industriales</li>
+                                                            <li>Montaje Electromecánico</li>
+                                                            <li>Mantenimiento Integral de Infraestructura e
+                                                                Instalaciones
+                                                            </li>
+                                                            <li>Rehabilitación y Mejoramiento de Infraestructura</li>
+                                                            <li>Inspección Técnica y Diagnóstico Estructural</li>
+                                                            <li>Levantamientos Topográficos y Replanteo de Obras</li>
+                                                            <li>Modelado BIM y Planos As-Built</li>
+                                                            <li>Arquitectura y Diseño Técnico</li>
+                                                            <li>Remodelación y Adecuación de Espacios</li>
+                                                            <li>Servicios Generales</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -176,16 +1361,39 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <!-- 3. GESTIÓN DE RESIDUOS SÓLIDOS -->
-                    <div class="col-lg-6">
-                        <div class="servicio-card border p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-recycle fa-2x text-success me-3"></i>
-                                <h3 class="servicio-titulo h4 m-0">3. Gestión de Residuos</h3>
+    <div class="modal fade" id="modalGestionDeResiduos" tabindex="-1" aria-labelledby="modalGestionDeResiduosLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+
+                <div class="modal-header header-modal-verde p-3 p-md-4">
+                    <h5 class="modal-title" id="modalGestionDeResiduosLabel"
+                        style="font-size: calc(1.1rem + 0.3vw); font-weight: 700;">
+                        <i class="fa-solid fa-recycle me-2"></i> GESTIÓN DE RESIDUOS
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-3 p-md-4">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+                                <img src="imagenes/gestion-residuos.jpeg" class="img-fluid" alt="Gestión de Residuos">
                             </div>
-                            <img src="imagenes/gestion-residuos.jpeg" class="img-fluid" alt="Gestión de Residuos">
-                            <div class="servicio-contenido mt-3">
+
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
                                 <ul class="list-unstyled text-muted small">
                                     <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Gestión
                                         integral de residuos sólidos.</li>
@@ -213,18 +1421,43 @@
                                 </ul>
                             </div>
                         </div>
+
                     </div>
 
-                    <!-- 4. MODELAMIENTO Y SIMULACIÓN AMBIENTAL -->
-                    <div class="col-lg-6">
-                        <div class="servicio-card border p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="fas fa-laptop-code fa-2x text-success me-3"></i>
-                                <h3 class="servicio-titulo h4 m-0">4. Modelamiento y Simulación Ambiental</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalModelamientoYSimulacionAmbiental" tabindex="-1"
+        aria-labelledby="modalModelamientoYSimulacionAmbientalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
+
+                <div class="modal-header header-modal-verde p-3 p-md-4">
+                    <h5 class="modal-title" id="modalModelamientoYSimulacionAmbientalLabel"
+                        style="font-size: calc(1.1rem + 0.3vw); font-weight: 700;">
+                        <i class="fa-solid fa-chart-line me-2"></i> MODELAMIENTO Y SIMULACIÓN AMBIENTAL
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-3 p-md-4">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+                                <img src="imagenes/modelamiento-simulacion.jpeg" class="img-fluid"
+                                    alt="Modelamiento y Simulación Ambiental">
                             </div>
-                            <img src="imagenes/modelamiento-simulacion.jpeg" class="img-fluid"
-                                alt="Modelamiento y Simulación Ambiental">
-                            <div class="servicio-contenido mt-3">
+
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
                                 <ul class="list-unstyled text-muted small">
                                     <li class="mb-2">
                                         <i class="bi bi-chevron-right text-success me-2"></i>Modelamiento de calidad de
@@ -255,206 +1488,236 @@
                                 </ul>
                             </div>
                         </div>
+
                     </div>
-
-                    <!-- 5. GESTIÓN DE RIESGOS DE DESASTRES (GRD) -->
-                    <div class="col-12">
-                        <div class="servicio-card border p-4 bg-light shadow-sm">
-                            <div class="d-flex align-items-center mb-4">
-                                <i class="fas fa-shield-alt fa-2x text-danger me-3"></i>
-                                <h3 class="servicio-titulo h4 m-0">5. Gestión de Riesgos de Desastres (GRD)</h3>
-                            </div>
-                            <img src="imagenes/gestion-desastres.jpeg" class="img-fluid" alt="Gestión de Desastres">
-
-                            <!-- Acordeón para los puntos de Gestión de Riesgos -->
-                            <div class="accordion accordion-flush" id="accGestionRiesgos">
-
-                                <!-- Diagnóstico y Evaluación del Riesgo -->
-                                <div class="accordion-item bg-transparent">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#grd-1">
-                                            Diagnóstico y Evaluación del Riesgo
-                                        </button>
-                                    </h2>
-                                    <div id="grd-1" class="accordion-collapse collapse"
-                                        data-bs-parent="#accGestionRiesgos">
-                                        <div class="accordion-body small text-muted">
-                                            <p><strong>Descripción:</strong> Identificación, análisis y estimación de
-                                                niveles de riesgo ante fenómenos naturales o antrópicos.</p>
-                                            <p><strong>Alcance:</strong> Levantamiento de información, elaboración de
-                                                mapas de peligro y vulnerabilidad, aplicación de metodologías
-                                                CENEPRED.</p>
-                                            <p><strong>Beneficiarios:</strong> Gobiernos locales, regionales y empresas
-                                                privadas.</p>
-                                            <p><strong>Normativa:</strong> Ley N° 29664 – SINAGERD; D.S. N°
-                                                048-2011-PCM.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Estudios Técnicos y Ambientales -->
-                                <div class="accordion-item bg-transparent">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#grd-2">
-                                            Estudios Técnicos y Ambientales Complementarios
-                                        </button>
-                                    </h2>
-                                    <div id="grd-2" class="accordion-collapse collapse"
-                                        data-bs-parent="#accGestionRiesgos">
-                                        <div class="accordion-body small text-muted">
-                                            <p><strong>Descripción:</strong> Análisis especializado para integrar la
-                                                gestión del riesgo en proyectos de inversión.</p>
-                                            <p><strong>Alcance:</strong> Elaboración de EIR, EIA con componente de
-                                                riesgo, estudios de estabilidad y delimitación de zonas no
-                                                mitigables.</p>
-                                            <p><strong>Beneficiarios:</strong> Promotores de inversión, municipalidades,
-                                                sector construcción y transporte.</p>
-                                            <p><strong>Normativa:</strong> D.S. N° 018-2014-PCM; Reglamento SEIA.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Gestión y Reducción del Riesgo -->
-                                <div class="accordion-item bg-transparent">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#grd-3">
-                                            Gestión y Reducción del Riesgo
-                                        </button>
-                                    </h2>
-                                    <div id="grd-3" class="accordion-collapse collapse"
-                                        data-bs-parent="#accGestionRiesgos">
-                                        <div class="accordion-body small text-muted">
-                                            <p><strong>Descripción:</strong> Formulación e implementación de medidas
-                                                estructurales y no estructurales para prevenir desastres.</p>
-                                            <p><strong>Alcance:</strong> Planes PPRRD, diseño de obras de mitigación,
-                                                asistencia técnica y planificación territorial.</p>
-                                            <p><strong>Beneficiarios:</strong> Gobiernos locales y regionales,
-                                                comunidades, desarrolladores urbanos.</p>
-                                            <p><strong>Normativa:</strong> D.S. N° 111-2012-PCM; Lineamientos
-                                                CENEPRED.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Preparación y Respuesta -->
-                                <div class="accordion-item bg-transparent">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#grd-4">
-                                            Preparación y Respuesta ante Desastres
-                                        </button>
-                                    </h2>
-                                    <div id="grd-4" class="accordion-collapse collapse"
-                                        data-bs-parent="#accGestionRiesgos">
-                                        <div class="accordion-body small text-muted">
-                                            <p><strong>Descripción:</strong> Fortalecimiento de capacidades
-                                                institucionales y comunitarias ante emergencias.</p>
-                                            <p><strong>Alcance:</strong> Elaboración de planes de contingencia, sistemas
-                                                de alerta temprana y capacitación de brigadas.</p>
-                                            <p><strong>Beneficiarios:</strong> Municipalidades, empresas industriales,
-                                                mineras y educativas.</p>
-                                            <p><strong>Normativa:</strong> Guía CENEPRED 2018; Normas INDECI.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Recuperación y Reconstrucción -->
-                                <div class="accordion-item bg-transparent">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#grd-5">
-                                            Recuperación y Reconstrucción Post Desastre
-                                        </button>
-                                    </h2>
-                                    <div id="grd-5" class="accordion-collapse collapse"
-                                        data-bs-parent="#accGestionRiesgos">
-                                        <div class="accordion-body small text-muted">
-                                            <p><strong>Descripción:</strong> Asesoría en procesos de recuperación
-                                                sostenible tras desastres.</p>
-                                            <p><strong>Alcance:</strong> Evaluación de daños, planes de reconstrucción y
-                                                seguimiento de proyectos post desastre.</p>
-                                            <p><strong>Beneficiarios:</strong> Gobiernos regionales, entidades del
-                                                Estado, organismos internacionales.</p>
-                                            <p><strong>Normativa:</strong> D.S. N° 094-2018-PCM; SINAGERD.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Monitoreo y Tecnologías -->
-                                <div class="accordion-item bg-transparent">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#grd-6">
-                                            Monitoreo, Geomática y Tecnologías Aplicadas
-                                        </button>
-                                    </h2>
-                                    <div id="grd-6" class="accordion-collapse collapse"
-                                        data-bs-parent="#accGestionRiesgos">
-                                        <div class="accordion-body small text-muted">
-                                            <p><strong>Descripción:</strong> Uso de tecnologías geoespaciales para
-                                                evaluación y monitoreo del riesgo.</p>
-                                            <p><strong>Alcance:</strong> Monitoreo con imágenes satelitales y drones,
-                                                bases georreferenciadas y modelamiento digital.</p>
-                                            <p><strong>Beneficiarios:</strong> Instituciones públicas, universidades y
-                                                proyectos de desarrollo territorial.</p>
-                                            <p><strong>Normativa:</strong> Lineamientos CENEPRED 2021; Política Nacional
-                                                de Información Geoespacial (IGN).</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Capacitación y Asesoría -->
-                                <div class="accordion-item bg-transparent">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed bg-transparent fw-bold" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#grd-7">
-                                            Capacitación y Asesoría Institucional
-                                        </button>
-                                    </h2>
-                                    <div id="grd-7" class="accordion-collapse collapse"
-                                        data-bs-parent="#accGestionRiesgos">
-                                        <div class="accordion-body small text-muted">
-                                            <p><strong>Descripción:</strong> Desarrollo de capacidades técnicas e
-                                                institucionales en gestión del riesgo.</p>
-                                            <p><strong>Alcance:</strong> Programas de capacitación, asesoría a gobiernos
-                                                locales y educación comunitaria.</p>
-                                            <p><strong>Beneficiarios:</strong> Funcionarios públicos, comunidades y
-                                                empresas privadas.</p>
-                                            <p><strong>Normativa:</strong> PLANAGERD 2022–2030; CENEPRED e INDECI.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
                     </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
+    <div class="modal fade" id="modalGestionDeRiesgosDeDesastres" tabindex="-1"
+        aria-labelledby="modalGestionDeRiesgosDeDesastresLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content border-0 shadow-lg">
 
+                <div class="modal-header header-modal-verde p-3 p-md-4">
+                    <h5 class="modal-title" id="modalGestionDeRiesgosDeDesastresLabel"
+                        style="font-size: calc(1.1rem + 0.3vw); font-weight: 700;">
+                        <i class="fa-solid fa-shield-alt me-2"></i> GESTIÓN DE RIESGOS DE
+                        DESASTRES
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
 
-        <!-- Llamada a la Acción Final (Mismo patrón que nosotros.html) -->
-        <section class="bg-light py-5 border-top CTA-final">
-            <div class="container text-center">
-                <h2 class="CTA-titulo fw-bold">¿Tiene alguna pregunta? Te ayudaremos.</h2>
-                <p class="text-muted mb-4">Contamos con el respaldo de profesionales con experiencia en entidades
-                    públicas y privadas.</p>
-                <a href="contacto.html"
-                    class="btn btn-contacto text-white px-5 py-3 fw-bold text-uppercase">Contáctanos</a>
+                <div class="modal-body p-3 p-md-4">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+                                <img src="imagenes/gestion-desastres.jpeg" class="img-fluid" alt="Gestión de Desastres">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-12 col-lg-6 col-sm-12">
+                            <div class="servicio-card border p-4">
+                                <!-- Acordeón para los puntos de Gestión de Riesgos -->
+                                <div class="accordion accordion-flush" id="accGestionRiesgos">
+
+                                    <!-- Diagnóstico y Evaluación del Riesgo -->
+                                    <div class="accordion-item bg-transparent">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent fw-bold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#grd-1">
+                                                Diagnóstico y Evaluación del Riesgo
+                                            </button>
+                                        </h2>
+                                        <div id="grd-1" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accGestionRiesgos">
+                                            <div class="accordion-body small text-muted">
+                                                <p><strong>Descripción:</strong> Identificación, análisis y estimación
+                                                    de
+                                                    niveles de riesgo ante fenómenos naturales o antrópicos.</p>
+                                                <p><strong>Alcance:</strong> Levantamiento de información, elaboración
+                                                    de
+                                                    mapas de peligro y vulnerabilidad, aplicación de metodologías
+                                                    CENEPRED.</p>
+                                                <p><strong>Beneficiarios:</strong> Gobiernos locales, regionales y
+                                                    empresas
+                                                    privadas.</p>
+                                                <p><strong>Normativa:</strong> Ley N° 29664 – SINAGERD; D.S. N°
+                                                    048-2011-PCM.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Estudios Técnicos y Ambientales -->
+                                    <div class="accordion-item bg-transparent">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent fw-bold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#grd-2">
+                                                Estudios Técnicos y Ambientales Complementarios
+                                            </button>
+                                        </h2>
+                                        <div id="grd-2" class="accordion-collapse collapse"
+                                            data-bs-parent="#accGestionRiesgos">
+                                            <div class="accordion-body small text-muted">
+                                                <p><strong>Descripción:</strong> Análisis especializado para integrar la
+                                                    gestión del riesgo en proyectos de inversión.</p>
+                                                <p><strong>Alcance:</strong> Elaboración de EIR, EIA con componente de
+                                                    riesgo, estudios de estabilidad y delimitación de zonas no
+                                                    mitigables.</p>
+                                                <p><strong>Beneficiarios:</strong> Promotores de inversión,
+                                                    municipalidades,
+                                                    sector construcción y transporte.</p>
+                                                <p><strong>Normativa:</strong> D.S. N° 018-2014-PCM; Reglamento SEIA.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Gestión y Reducción del Riesgo -->
+                                    <div class="accordion-item bg-transparent">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent fw-bold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#grd-3">
+                                                Gestión y Reducción del Riesgo
+                                            </button>
+                                        </h2>
+                                        <div id="grd-3" class="accordion-collapse collapse"
+                                            data-bs-parent="#accGestionRiesgos">
+                                            <div class="accordion-body small text-muted">
+                                                <p><strong>Descripción:</strong> Formulación e implementación de medidas
+                                                    estructurales y no estructurales para prevenir desastres.</p>
+                                                <p><strong>Alcance:</strong> Planes PPRRD, diseño de obras de
+                                                    mitigación,
+                                                    asistencia técnica y planificación territorial.</p>
+                                                <p><strong>Beneficiarios:</strong> Gobiernos locales y regionales,
+                                                    comunidades, desarrolladores urbanos.</p>
+                                                <p><strong>Normativa:</strong> D.S. N° 111-2012-PCM; Lineamientos
+                                                    CENEPRED.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Preparación y Respuesta -->
+                                    <div class="accordion-item bg-transparent">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent fw-bold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#grd-4">
+                                                Preparación y Respuesta ante Desastres
+                                            </button>
+                                        </h2>
+                                        <div id="grd-4" class="accordion-collapse collapse"
+                                            data-bs-parent="#accGestionRiesgos">
+                                            <div class="accordion-body small text-muted">
+                                                <p><strong>Descripción:</strong> Fortalecimiento de capacidades
+                                                    institucionales y comunitarias ante emergencias.</p>
+                                                <p><strong>Alcance:</strong> Elaboración de planes de contingencia,
+                                                    sistemas
+                                                    de alerta temprana y capacitación de brigadas.</p>
+                                                <p><strong>Beneficiarios:</strong> Municipalidades, empresas
+                                                    industriales,
+                                                    mineras y educativas.</p>
+                                                <p><strong>Normativa:</strong> Guía CENEPRED 2018; Normas INDECI.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Recuperación y Reconstrucción -->
+                                    <div class="accordion-item bg-transparent">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent fw-bold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#grd-5">
+                                                Recuperación y Reconstrucción Post Desastre
+                                            </button>
+                                        </h2>
+                                        <div id="grd-5" class="accordion-collapse collapse"
+                                            data-bs-parent="#accGestionRiesgos">
+                                            <div class="accordion-body small text-muted">
+                                                <p><strong>Descripción:</strong> Asesoría en procesos de recuperación
+                                                    sostenible tras desastres.</p>
+                                                <p><strong>Alcance:</strong> Evaluación de daños, planes de
+                                                    reconstrucción y
+                                                    seguimiento de proyectos post desastre.</p>
+                                                <p><strong>Beneficiarios:</strong> Gobiernos regionales, entidades del
+                                                    Estado, organismos internacionales.</p>
+                                                <p><strong>Normativa:</strong> D.S. N° 094-2018-PCM; SINAGERD.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Monitoreo y Tecnologías -->
+                                    <div class="accordion-item bg-transparent">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent fw-bold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#grd-6">
+                                                Monitoreo, Geomática y Tecnologías Aplicadas
+                                            </button>
+                                        </h2>
+                                        <div id="grd-6" class="accordion-collapse collapse"
+                                            data-bs-parent="#accGestionRiesgos">
+                                            <div class="accordion-body small text-muted">
+                                                <p><strong>Descripción:</strong> Uso de tecnologías geoespaciales para
+                                                    evaluación y monitoreo del riesgo.</p>
+                                                <p><strong>Alcance:</strong> Monitoreo con imágenes satelitales y
+                                                    drones,
+                                                    bases georreferenciadas y modelamiento digital.</p>
+                                                <p><strong>Beneficiarios:</strong> Instituciones públicas, universidades
+                                                    y
+                                                    proyectos de desarrollo territorial.</p>
+                                                <p><strong>Normativa:</strong> Lineamientos CENEPRED 2021; Política
+                                                    Nacional
+                                                    de Información Geoespacial (IGN).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Capacitación y Asesoría -->
+                                    <div class="accordion-item bg-transparent">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed bg-transparent fw-bold"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#grd-7">
+                                                Capacitación y Asesoría Institucional
+                                            </button>
+                                        </h2>
+                                        <div id="grd-7" class="accordion-collapse collapse"
+                                            data-bs-parent="#accGestionRiesgos">
+                                            <div class="accordion-body small text-muted">
+                                                <p><strong>Descripción:</strong> Desarrollo de capacidades técnicas e
+                                                    institucionales en gestión del riesgo.</p>
+                                                <p><strong>Alcance:</strong> Programas de capacitación, asesoría a
+                                                    gobiernos
+                                                    locales y educación comunitaria.</p>
+                                                <p><strong>Beneficiarios:</strong> Funcionarios públicos, comunidades y
+                                                    empresas privadas.</p>
+                                                <p><strong>Normativa:</strong> PLANAGERD 2022–2030; CENEPRED e INDECI.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <a href="contacto.html" class="btn btn-panagreen-verde">Solicitar Asesoría</a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <!-- Placeholder para Footer -->
-    <div id="footer-placeholder"></div>
 
-    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <!-- Bootstrap 5.3.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>

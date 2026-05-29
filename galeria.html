@@ -39,7 +39,7 @@
                     <!-- Imagen 1 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/estudios-aprobados.png" alt="Estudios Aprobados"
+                            <img src="imagenes/capacitacion-entrenamiento.jpeg" alt="Estudios Aprobados"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Nuestros Estudios</span>
@@ -50,7 +50,7 @@
                     <!-- Imagen 2 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/cerficacion-edificaciones.png" alt="Edificaciones"
+                            <img src="imagenes/estudios/vivienda-3.jpeg" alt="Edificaciones"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Edificaciones</span>
@@ -61,7 +61,7 @@
                     <!-- Imagen 3 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/certificacion-saneamiento.png" alt="Saneamiento"
+                            <img src="imagenes/estudios/saneamiento-1.jpeg" alt="Saneamiento"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Saneamiento</span>
@@ -72,7 +72,8 @@
                     <!-- Imagen 4 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/certificacion-salud.png" alt="Salud" class="img-fluid rounded shadow-sm">
+                            <img src="imagenes/monitoreo-ocupacional-2.jpeg" alt="Salud"
+                                class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Salud</span>
                             </div>
@@ -82,7 +83,7 @@
                     <!-- Imagen 5 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/certificacion-salud-ambiental.png" alt="Salud Ambiental"
+                            <img src="imagenes/monitoreo-ocupacional-5.jpeg" alt="Salud Ambiental"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Salud Ambiental</span>
@@ -93,7 +94,7 @@
                     <!-- Imagen 6 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/cerfificacion-agricultura.png" alt="Agricultura"
+                            <img src="imagenes/estudios/agricultura-2.jpeg" alt="Agricultura"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Agricultura</span>
@@ -104,7 +105,7 @@
                     <!-- Imagen 7 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/certificacion-transporte.png" alt="Transportes"
+                            <img src="imagenes/estudios/transportes-6.jpeg" alt="Transportes"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Transportes</span>
@@ -115,7 +116,7 @@
                     <!-- Imagen 8 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/certificacion-gestion-transporte.png" alt="Gestión de Transportes"
+                            <img src="imagenes/estudios/transportes-5.jpeg" alt="Gestión de Transportes"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Gestión de Transportes</span>
@@ -126,7 +127,7 @@
                     <!-- Imagen 9 -->
                     <div class="col-12 col-sm-6 col-md-4">
                         <div class="galeria-item card border-0">
-                            <img src="imagenes/proyectos-viales.png" alt="Proyectos"
+                            <img src="imagenes/estudios/transportes-4.jpeg" alt="Proyectos"
                                 class="img-fluid rounded shadow-sm">
                             <div class="galeria-overlay d-flex align-items-center justify-content-center">
                                 <span class="text-white fw-bold text-uppercase">Proyectos Viales</span>
@@ -145,12 +146,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        // CARGA DE COMPONENTES (Mismo script que nosotros.html)
         document.addEventListener("DOMContentLoaded", function () {
             // Cargar Nav
             fetch('componentes/navbar.html')
                 .then(res => res.text())
                 .then(data => {
                     document.getElementById('nav-placeholder').innerHTML = data;
+                    resaltarLink(); // Ejecutar resaltado tras cargar
                 });
 
             // Cargar Footer
@@ -160,6 +163,17 @@
                     document.getElementById('footer-placeholder').innerHTML = data;
                 });
         });
+
+        // Lógica de resaltado (Verde Panagreen)
+        function resaltarLink() {
+            const path = window.location.pathname.split("/").pop() || "index.html";
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                if (link.getAttribute('href') === path) {
+                    link.classList.add('active');
+                }
+            });
+        }
     </script>
 
 </body>
