@@ -74,6 +74,11 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
+.social-links a.tiktok:hover {
+    color: #000000;
+    /* O #ff0050 si prefieres el rojo característico de TikTok */
+}
+
 /* =========================================
    3. CARRUSEL PRINCIPAL
    ========================================= */

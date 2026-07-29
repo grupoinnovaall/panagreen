@@ -165,16 +165,38 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts de carga de componentes -->
+    <!-- Bootstrap 5.3.3 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
+        // CARGA DE COMPONENTES (Mismo script que nosotros.html)
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('componentes/navbar.html').then(res => res.text()).then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
-            fetch('componentes/footer.html').then(res => res.text()).then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
+            // Cargar Nav
+            fetch('componentes/navbar.html')
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                    resaltarLink(); // Ejecutar resaltado tras cargar
+                });
+
+            // Cargar Footer
+            fetch('componentes/footer.html')
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
         });
+
+        // Lógica de resaltado (Verde Panagreen)
+        function resaltarLink() {
+            const path = window.location.pathname.split("/").pop() || "index.html";
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+                if (link.getAttribute('href') === path) {
+                    link.classList.add('active');
+                }
+            });
+        }
     </script>
 </body>
 
